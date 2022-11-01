@@ -1,0 +1,156 @@
+2022-10-27 19:47:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE IF EXISTS EMPLOYEE\000a[*]CREATE TABLE EMPLOYEE(ID INT PRIMARY KEY, NAME VARCHAR(50), AGE INT(), COMPANY STRING(50), DATE DATE();\000aINSERT INTO EMPLOYEE VALUES(1,Andres,28,Digital,2022-05-15);\000aINSERT INTO EMPLOYEE VALUES(2,Juan,29,Google,2018-09-25);\000aINSERT INTO EMPLOYEE VALUES(1,Pedro,35,Facebook,2010-01-20);\000a"; SQL statement:
+DROP TABLE IF EXISTS EMPLOYEE
+CREATE TABLE EMPLOYEE(ID INT PRIMARY KEY, NAME VARCHAR(50), AGE INT(), COMPANY STRING(50), DATE DATE();
+INSERT INTO EMPLOYEE VALUES(1,Andres,28,Digital,2022-05-15);
+INSERT INTO EMPLOYEE VALUES(2,Juan,29,Google,2018-09-25);
+INSERT INTO EMPLOYEE VALUES(1,Pedro,35,Facebook,2010-01-20);
+ [42000-214]
+2022-10-27 19:47:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE EMPLOYEE(ID INT PRIMARY KEY, NAME VARCHAR(50), AGE INT[*](), COMPANY STRING(50), DATE DATE();\000aINSERT INTO EMPLOYEE VALUES(1,Andres,28,Digital,2022-05-15);\000aINSERT INTO EMPLOYEE VALUES(2,Juan,29,Google,2018-09-25);\000aINSERT INTO EMPLOYEE VALUES(1,Pedro,35,Facebook,2010-01-20);\000a"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE EMPLOYEE(ID INT PRIMARY KEY, NAME VARCHAR(50), AGE INT(), COMPANY STRING(50), DATE DATE();
+INSERT INTO EMPLOYEE VALUES(1,Andres,28,Digital,2022-05-15);
+INSERT INTO EMPLOYEE VALUES(2,Juan,29,Google,2018-09-25);
+INSERT INTO EMPLOYEE VALUES(1,Pedro,35,Facebook,2010-01-20);
+ [42001-214]
+2022-10-27 19:49:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Unknown data type: "STRING"; SQL statement:
+CREATE TABLE EMPLOYEE(ID INT PRIMARY KEY, NAME VARCHAR(50) NOT NULL, AGE INT NOT NULL, COMPANY STRING(50) NOT NULL, DATE DATE ;
+INSERT INTO EMPLOYEE VALUES(1,Andres,28,Digital,2022-05-15);
+INSERT INTO EMPLOYEE VALUES(2,Juan,29,Google,2018-09-25);
+INSERT INTO EMPLOYEE VALUES(1,Pedro,35,Facebook,2010-01-20);
+ [50004-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readIfDataType1(Parser.java:6249)
+	at org.h2.command.Parser.readIfDataType(Parser.java:6087)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:6069)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5948)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:9331)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:9271)
+	at org.h2.command.Parser.parseCreate(Parser.java:6784)
+	at org.h2.command.Parser.parsePrepared(Parser.java:763)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:53)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.example.App.main(App.java:25)
+2022-10-27 19:50:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE EMPLOYEE(ID INT PRIMARY KEY, NAME VARCHAR(50) NOT NULL, AGE INT NOT NULL, COMPANY VARCHAR(50) NOT NULL, DATE DATE [*];\000aINSERT INTO EMPLOYEE VALUES(1,Andres,28,Digital,2022-05-15);\000aINSERT INTO EMPLOYEE VALUES(2,Juan,29,Google,2018-09-25);\000aINSERT INTO EMPLOYEE VALUES(1,Pedro,35,Facebook,2010-01-20);\000a"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE EMPLOYEE(ID INT PRIMARY KEY, NAME VARCHAR(50) NOT NULL, AGE INT NOT NULL, COMPANY VARCHAR(50) NOT NULL, DATE DATE ;
+INSERT INTO EMPLOYEE VALUES(1,Andres,28,Digital,2022-05-15);
+INSERT INTO EMPLOYEE VALUES(2,Juan,29,Google,2018-09-25);
+INSERT INTO EMPLOYEE VALUES(1,Pedro,35,Facebook,2010-01-20);
+ [42001-214]
+2022-10-27 19:51:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE EMPLOYEE(ID INT PRIMARY KEY, NAME VARCHAR(50), AGE INT, COMPANY VARCHAR(50), DATE DATE[*];\000aINSERT INTO EMPLOYEE VALUES(1,Andres,28,Digital,2022-05-15);\000aINSERT INTO EMPLOYEE VALUES(2,Juan,29,Google,2018-09-25);\000aINSERT INTO EMPLOYEE VALUES(1,Pedro,35,Facebook,2010-01-20);\000a"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE EMPLOYEE(ID INT PRIMARY KEY, NAME VARCHAR(50), AGE INT, COMPANY VARCHAR(50), DATE DATE;
+INSERT INTO EMPLOYEE VALUES(1,Andres,28,Digital,2022-05-15);
+INSERT INTO EMPLOYEE VALUES(2,Juan,29,Google,2018-09-25);
+INSERT INTO EMPLOYEE VALUES(1,Pedro,35,Facebook,2010-01-20);
+ [42001-214]
+2022-10-27 19:51:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE EMPLOYEE(ID INT PRIMARY KEY, NAME VARCHAR(50), AGE INT, COMPANY VARCHAR(50), DATE DATE[*];\000aINSERT INTO EMPLOYEE VALUES(1,'Andres',28,'Digital',2022-05-15);\000aINSERT INTO EMPLOYEE VALUES(2,'Juan',29,'Google',2018-09-25);\000aINSERT INTO EMPLOYEE VALUES(1,'Pedro',35,'Facebook',2010-01-20);\000a"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE EMPLOYEE(ID INT PRIMARY KEY, NAME VARCHAR(50), AGE INT, COMPANY VARCHAR(50), DATE DATE;
+INSERT INTO EMPLOYEE VALUES(1,'Andres',28,'Digital',2022-05-15);
+INSERT INTO EMPLOYEE VALUES(2,'Juan',29,'Google',2018-09-25);
+INSERT INTO EMPLOYEE VALUES(1,'Pedro',35,'Facebook',2010-01-20);
+ [42001-214]
+2022-10-27 19:52:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE EMPLOYEE(ID INT PRIMARY KEY, NAME VARCHAR(50), AGE INT, COMPANY VARCHAR(50))\000a[*]INSERT INTO EMPLOYEE VALUES(1,Andres,28,Digital,2022-05-15);\000aINSERT INTO EMPLOYEE VALUES(2,Juan,29,Google,2018-09-25);\000aINSERT INTO EMPLOYEE VALUES(1,Pedro,35,Facebook,2010-01-20);\000a"; SQL statement:
+CREATE TABLE EMPLOYEE(ID INT PRIMARY KEY, NAME VARCHAR(50), AGE INT, COMPANY VARCHAR(50))
+INSERT INTO EMPLOYEE VALUES(1,Andres,28,Digital,2022-05-15);
+INSERT INTO EMPLOYEE VALUES(2,Juan,29,Google,2018-09-25);
+INSERT INTO EMPLOYEE VALUES(1,Pedro,35,Facebook,2010-01-20);
+ [42000-214]
+2022-10-27 19:53:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE EMPLOYEE(ID INT PRIMARY KEY, NAME VARCHAR(50), AGE INT, COMPANY VARCHAR(50))\000a[*]INSERT INTO EMPLOYEE VALUES(1,Andres,28,Digital);\000aINSERT INTO EMPLOYEE VALUES(2,Juan,29,Google);\000aINSERT INTO EMPLOYEE VALUES(1,Pedro,35,Facebook);\000a"; SQL statement:
+CREATE TABLE EMPLOYEE(ID INT PRIMARY KEY, NAME VARCHAR(50), AGE INT, COMPANY VARCHAR(50))
+INSERT INTO EMPLOYEE VALUES(1,Andres,28,Digital);
+INSERT INTO EMPLOYEE VALUES(2,Juan,29,Google);
+INSERT INTO EMPLOYEE VALUES(1,Pedro,35,Facebook);
+ [42000-214]
+2022-10-27 19:53:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE EMPLOYEE(ID INT, NAME VARCHAR(50), AGE INT, COMPANY VARCHAR(50))\000a[*]INSERT INTO EMPLOYEE VALUES(1,Andres,28,Digital);\000aINSERT INTO EMPLOYEE VALUES(2,Juan,29,Google);\000aINSERT INTO EMPLOYEE VALUES(1,Pedro,35,Facebook);\000a"; SQL statement:
+CREATE TABLE EMPLOYEE(ID INT, NAME VARCHAR(50), AGE INT, COMPANY VARCHAR(50))
+INSERT INTO EMPLOYEE VALUES(1,Andres,28,Digital);
+INSERT INTO EMPLOYEE VALUES(2,Juan,29,Google);
+INSERT INTO EMPLOYEE VALUES(1,Pedro,35,Facebook);
+ [42000-214]
+2022-10-27 20:03:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE EMPLOYEE(ID INT, NAME VARCHAR(50), AGE INT, COMPANY VARCHAR(50))\000a[*]INSERT INTO EMPLOYEE VALUES(1,Andres,28,Digital);\000aINSERT INTO EMPLOYEE VALUES(2,Juan,29,Google);\000aINSERT INTO EMPLOYEE VALUES(1,Pedro,35,Facebook);\000a"; SQL statement:
+CREATE TABLE EMPLOYEE(ID INT, NAME VARCHAR(50), AGE INT, COMPANY VARCHAR(50))
+INSERT INTO EMPLOYEE VALUES(1,Andres,28,Digital);
+INSERT INTO EMPLOYEE VALUES(2,Juan,29,Google);
+INSERT INTO EMPLOYEE VALUES(1,Pedro,35,Facebook);
+ [42000-214]
+2022-10-27 20:04:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE EMPLOYEE(ID INT, NAME VARCHAR(50), AGE INT, COMPANY VARCHAR(50))\000a[*]INSERT INTO EMPLOYEE VALUES(1,'Andres',28,'Digital');\000aINSERT INTO EMPLOYEE VALUES(2,'Juan',29,'Google');\000aINSERT INTO EMPLOYEE VALUES(1,'Pedro',35,'Facebook');\000a"; SQL statement:
+CREATE TABLE EMPLOYEE(ID INT, NAME VARCHAR(50), AGE INT, COMPANY VARCHAR(50))
+INSERT INTO EMPLOYEE VALUES(1,'Andres',28,'Digital');
+INSERT INTO EMPLOYEE VALUES(2,'Juan',29,'Google');
+INSERT INTO EMPLOYEE VALUES(1,'Pedro',35,'Facebook');
+ [42000-214]
+2022-10-27 20:04:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE EMPLOYEE(ID INT, NAME VARCHAR(50), AGE INT, COMPANY VARCHAR(50))\000a[*]INSERT INTO EMPLOYEE VALUES(1,'Andres',28,'Digital');\000aINSERT INTO EMPLOYEE VALUES(2,'Juan',29,'Google');\000aINSERT INTO EMPLOYEE VALUES(3,'Pedro',35,'Facebook');\000a"; SQL statement:
+CREATE TABLE EMPLOYEE(ID INT, NAME VARCHAR(50), AGE INT, COMPANY VARCHAR(50))
+INSERT INTO EMPLOYEE VALUES(1,'Andres',28,'Digital');
+INSERT INTO EMPLOYEE VALUES(2,'Juan',29,'Google');
+INSERT INTO EMPLOYEE VALUES(3,'Pedro',35,'Facebook');
+ [42000-214]
+2022-10-27 20:05:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TEST" not found; SQL statement:
+select * from TEST [42102-214]
+2022-10-27 20:07:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "1980 (EMPLOYEE: ""DATE"" DATE)"; SQL statement:
+INSERT INTO EMPLOYEE VALUES(1,'Andres',28,'Digital',2015-10-25) [22018-214]
+2022-10-27 20:07:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "1980 (EMPLOYEE: ""DATE"" DATE)"; SQL statement:
+INSERT INTO EMPLOYEE VALUES(1,'Andres',28,'Digital',2015-10-25) [22018-214]
+2022-10-27 20:07:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "1980 (EMPLOYEE: ""DATE"" DATE)"; SQL statement:
+INSERT INTO EMPLOYEE VALUES(1,'Andres',28,'Digital',2015-25-10) [22018-214]
+2022-10-27 20:08:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Cannot parse "DATE" constant "2015-25-10"; SQL statement:
+INSERT INTO EMPLOYEE VALUES(1,'Andres',28,'Digital','2015-25-10') [22007-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:506)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.value.ValueDate.parse(ValueDate.java:53)
+	at org.h2.value.Value.convertToDate(Value.java:1854)
+	at org.h2.value.Value.convertTo(Value.java:1147)
+	at org.h2.value.Value.convertForAssignTo(Value.java:1092)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:369)
+	at org.h2.table.Table.convertInsertRow(Table.java:926)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.command.CommandList.update(CommandList.java:65)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:58)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:58)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.example.App.main(App.java:25)
+Caused by: java.lang.IllegalArgumentException: 2015-25-10
+	at org.h2.util.DateTimeUtils.parseDateValue(DateTimeUtils.java:194)
+	at org.h2.value.ValueDate.parse(ValueDate.java:51)
+	... 19 more
+2022-10-27 23:34:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE EMPLOYEE(ID INT, NAME VARCHAR(50), AGE INT, COMPANY VARCHAR(50), DATE DATE)\000a[*]INSERT INTO EMPLOYEE VALUES(1,'Andres',28,'Digital','2015-06-10');\000aINSERT INTO EMPLOYEE VALUES(2,'Juan',29,'Google','2020-02-10');\000aINSERT INTO EMPLOYEE VALUES(3,'Pedro',35,'Facebook','2010-08-02');\000a"; SQL statement:
+CREATE TABLE EMPLOYEE(ID INT, NAME VARCHAR(50), AGE INT, COMPANY VARCHAR(50), DATE DATE)
+INSERT INTO EMPLOYEE VALUES(1,'Andres',28,'Digital','2015-06-10');
+INSERT INTO EMPLOYEE VALUES(2,'Juan',29,'Google','2020-02-10');
+INSERT INTO EMPLOYEE VALUES(3,'Pedro',35,'Facebook','2010-08-02');
+ [42000-214]

@@ -1,0 +1,46 @@
+2022-10-31 17:52:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE PACIENTES( ID INT PRIMARY KEY, NOMBRE VARCHAR(100) NOT NULL [*]APELLIDO VARCHAR(100) NOT NULL DOMICILIO VARCHAR(100) DNI VARCHAR(10) FECHAALTA DATE USUARIO VARCHAR(20) PASSWORD VARCHAR(20))"; expected "AS, DEFAULT, GENERATED, ON UPDATE, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE PACIENTES( ID INT PRIMARY KEY, NOMBRE VARCHAR(100) NOT NULL APELLIDO VARCHAR(100) NOT NULL DOMICILIO VARCHAR(100) DNI VARCHAR(10) FECHAALTA DATE USUARIO VARCHAR(20) PASSWORD VARCHAR(20)) [42001-214]
+2022-10-31 17:53:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE PACIENTES( ID INT PRIMARY KEY, NOMBRE VARCHAR(100) NOT NULL [*]APELLIDO VARCHAR(100) NOT NULL DOMICILIO VARCHAR(100) DNI VARCHAR(10) FECHAALTA DATE USUARIO VARCHAR(20) PASSWORD VARCHAR(20));"; expected "AS, DEFAULT, GENERATED, ON UPDATE, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE PACIENTES( ID INT PRIMARY KEY, NOMBRE VARCHAR(100) NOT NULL APELLIDO VARCHAR(100) NOT NULL DOMICILIO VARCHAR(100) DNI VARCHAR(10) FECHAALTA DATE USUARIO VARCHAR(20) PASSWORD VARCHAR(20)); [42001-214]
+2022-10-31 22:58:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Cannot parse "DATE" constant "20/05/2022"; SQL statement:
+INSERT INTO PACIENTES (ID,NOMBRE,APELLIDO,DOMICILIO,DNI,FECHAALTA,USUARIO,PASSWORD) VALUES (?,?,?,?,?,?,?,?) [22007-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:506)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.value.ValueDate.parse(ValueDate.java:53)
+	at org.h2.value.Value.convertToDate(Value.java:1854)
+	at org.h2.value.Value.convertTo(Value.java:1147)
+	at org.h2.value.Value.convertForAssignTo(Value.java:1092)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:369)
+	at org.h2.table.Table.convertInsertRow(Table.java:926)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:254)
+	at org.example.App.main(App.java:58)
+Caused by: java.lang.NumberFormatException: For input string: "20/05/"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:665)
+	at java.base/java.lang.Integer.parseInt(Integer.java:781)
+	at org.h2.util.DateTimeUtils.parseDateValue(DateTimeUtils.java:190)
+	at org.h2.value.ValueDate.parse(ValueDate.java:51)
+	... 12 more
+2022-10-31 23:13:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parameter "#2" is not set; SQL statement:
+UPDATE PACIENTES SET PASSWORD=? WHERE USUARIO=? [90012-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:646)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:75)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:207)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:159)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at org.example.App.main(App.java:68)
