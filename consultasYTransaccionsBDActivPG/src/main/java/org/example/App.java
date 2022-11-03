@@ -106,6 +106,6 @@ public class App
 
     private static Connection getConnection() throws Exception {
         Class.forName("org.h2.Driver");
-        return DriverManager.getConnection("jdbc:h2:"+"./Database/my", "root", "myPassword");
+        return DriverManager.getConnection("jdbc:h2:~/myDatabase", "root", "myPassword");
     }
 }

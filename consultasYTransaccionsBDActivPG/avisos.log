@@ -147,3 +147,11 @@ UPDATE PACIENTES SET PASSWORD=? WHERE USUARIO=? [90012-214]
 [2022-10-3123:14:13] [ INFO ] [App:42] Tabla creada satisfactoriamente
 [2022-10-3123:14:13] [ INFO ] [App:56] Usuario insertado correctamente
 [2022-10-3123:14:13] [ INFO ] [App:66] Contraseña actualizada correctamente
+[2022-11-0212:22:55] [ INFO ] [App:40] Creando tabla
+[2022-11-0212:22:55] [ INFO ] [App:42] Tabla creada satisfactoriamente
+[2022-11-0212:22:55] [ INFO ] [App:56] Usuario insertado correctamente
+[2022-11-0212:22:55] [ INFO ] [App:66] Contraseña actualizada correctamente
+[2022-11-0212:24:59] [ INFO ] [App:40] Creando tabla
+[2022-11-0212:25:00] [ INFO ] [App:42] Tabla creada satisfactoriamente
+[2022-11-0212:25:00] [ INFO ] [App:56] Usuario insertado correctamente
+[2022-11-0212:25:00] [ INFO ] [App:66] Contraseña actualizada correctamente
