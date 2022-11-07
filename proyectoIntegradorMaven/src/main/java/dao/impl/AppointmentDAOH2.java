@@ -1,11 +1,11 @@
-package main.com.dh.integrador.dao.impl;
+package dao.impl;
 
-import main.com.dh.integrador.dao.IDao;
-import main.com.dh.integrador.model.Appointment;
-import main.com.dh.integrador.service.DentistService;
-import main.com.dh.integrador.service.PatientService;
+
+import dao.IDao;
+import model.Appointment;
 import org.apache.log4j.Logger;
-
+import service.DentistService;
+import service.PatientService;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -119,7 +119,7 @@ public class AppointmentDAOH2 implements IDao<Appointment> {
     public List<Appointment> searchAll() {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        List <Appointment> appointments = new ArrayList<>();
+        List<Appointment> appointments = new ArrayList<>();
         Appointment appointment = null;
 
         try {
