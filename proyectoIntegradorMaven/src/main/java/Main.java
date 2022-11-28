@@ -22,10 +22,18 @@ public class Main {
         // User
 
 
-        User user = new User(10L, "Andres","Poblete","user");
-        UserService userService = new UserService(new UserDAOH2());
-        userService.save(user);
-        System.out.println(userService.search(10L).toString());
+//        User user = new User(10L, "Andres","Poblete","user");
+//        User user1 = new User(1L, "Pepito","Salamanca","user");
+//        User user2 = new User(2L, "Ruben","Martinez","user");
+//        User user3 = new User(3L, "Pablo","Iacono","user");
+//        User user4 = new User(4L, "Juan","Riquelme","user");
+//        User user5 = new User(5L, "Patricia","Sosa","user");
+//        UserService userService = new UserService(new UserDAOH2());
+//        userService.save(user2);
+//        userService.save(user3);
+//        userService.save(user4);
+//        userService.save(user5);
+//        System.out.println(userService.search(10L).toString());
 
 
 

@@ -1,6 +1,5 @@
 package main.com.dh.integrador.model;
 
-import java.time.LocalDate;
 import java.sql.Date;
 
 public class Patient extends User {

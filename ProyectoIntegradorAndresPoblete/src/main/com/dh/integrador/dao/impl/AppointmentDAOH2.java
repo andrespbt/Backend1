@@ -2,6 +2,8 @@ package main.com.dh.integrador.dao.impl;
 
 import main.com.dh.integrador.dao.IDao;
 import main.com.dh.integrador.model.Appointment;
+import main.com.dh.integrador.model.Dentist;
+import main.com.dh.integrador.model.Patient;
 import main.com.dh.integrador.service.DentistService;
 import main.com.dh.integrador.service.PatientService;
 import org.apache.log4j.Logger;
