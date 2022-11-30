@@ -6,57 +6,16 @@ import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class DentistServiceImplTest {
 
     @Autowired
     IDentistService dentistService;
 
-    @Test
-    void saveDentist() {
-        DentistDTO dentistDTO = new DentistDTO("Andres","Poblete","14123");
-        dentistService.saveDentist(dentistDTO);
-        assertEquals("Poblete", dentistService.searchDentistById(1L).getLastName());
-    }
-
-    @Test
-    void searchDentistById() {
-        DentistDTO dentistDTO = new DentistDTO("Andres","Poblete","14123");
-        dentistService.saveDentist(dentistDTO);
-        Long idToSearch = dentistService.searchDentistByLicenseNumber("14123").getId();
-        assertNotNull(dentistService.searchDentistById(idToSearch));
-    }
-
-    @Test
-    void searchDentistByLicenseNumber() {
-        DentistDTO dentistDTO = new DentistDTO("Andres","Poblete","14123");
-        dentistService.saveDentist(dentistDTO);
-        assertEquals("Andres", dentistService.searchDentistByLicenseNumber("14123").getName());
-    }
-
-    @Test
-    void updateDentist() {
-        dentistService.saveDentist(new DentistDTO("Andres","Poblete","14123"));
-        dentistService.updateDentist(new DentistDTO(1L,"Andres", "Moreno", "14123"));
-        assertEquals("Moreno", dentistService.searchDentistById(1L).getLastName());
-    }
-
-    @Test
-    void deleteDentistById() {
-
-        DentistDTO dentistDTO = new DentistDTO(1L,"Andres","Poblete","14123");
-        dentistService.saveDentist(dentistDTO);
-        dentistService.deleteDentistById(1L);
-        assertNull(dentistService.searchDentistById(1L));
-    }
-
-    @Test
-    void searchAllDentists() {
+    public void createInstance(){
         DentistDTO dentistDTO = new DentistDTO("Andres","Poblete","14123");
         DentistDTO dentistDTO1 = new DentistDTO("Pablo","Perez","44213");
         DentistDTO dentistDTO2 = new DentistDTO("Marcos","Acuña","11231");
@@ -64,6 +23,63 @@ class DentistServiceImplTest {
         dentistService.saveDentist(dentistDTO1);
         dentistService.saveDentist(dentistDTO2);
 
+    }
+
+    @Test
+    @Order(1)
+    void saveDentist() {
+        if(dentistService.searchAllDentists().size() == 0){
+            createInstance();
+        }
+        assertEquals("Poblete", dentistService.searchDentistByLicenseNumber("14123").getLastName());
+    }
+
+    @Test
+    @Order(2)
+    void searchDentistById() {
+        if(dentistService.searchAllDentists().size() == 0){
+            createInstance();
+        }
+        assertNotNull(dentistService.searchDentistById(1L));
+    }
+
+    @Test
+    @Order(3)
+    void searchDentistByLicenseNumber() {
+        if(dentistService.searchAllDentists().size() == 0){
+            createInstance();
+        }
+        assertEquals("Andres", dentistService.searchDentistByLicenseNumber("14123").getName());
+    }
+
+    @Test
+    @Order(5)
+    void updateDentist() {
+
+        if(dentistService.searchAllDentists().size() == 0){
+            createInstance();
+        }
+        dentistService.updateDentist(new DentistDTO(1L,"Andres", "Moreno", "14123"));
+        assertEquals("Moreno", dentistService.searchDentistById(1L).getLastName());
+    }
+
+    @Test
+    @Order(6)
+    void deleteDentistById() {
+
+        if(dentistService.searchAllDentists().size() == 0){
+            createInstance();
+        }
+        dentistService.deleteDentistById(1L);
+        assertNull(dentistService.searchDentistById(1L));
+    }
+
+    @Test
+    @Order(4)
+    void searchAllDentists() {
+        if(dentistService.searchAllDentists().size() == 0){
+            createInstance();
+        }
         assertTrue(dentistService.searchAllDentists().size() >= 3);
     }
 }

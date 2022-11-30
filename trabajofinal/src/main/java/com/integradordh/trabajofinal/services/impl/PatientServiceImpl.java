@@ -24,8 +24,12 @@ public class PatientServiceImpl implements IPatientService {
 
     @Override
     public void savePatient(PatientDTO patientDTO) {
-        Patient patient = objectMapper.convertValue(patientDTO, Patient.class);
-        patientRepository.save(patient);
+
+        if(patientRepository.searchPatientByNationalId(patientDTO.getNationalId()) == null){
+            Patient patient = objectMapper.convertValue(patientDTO, Patient.class);
+            patientRepository.save(patient);
+        }
+
 
     }
 

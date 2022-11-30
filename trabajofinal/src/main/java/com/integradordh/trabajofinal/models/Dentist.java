@@ -1,9 +1,7 @@
 package com.integradordh.trabajofinal.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,6 +18,7 @@ import java.util.Set;
 @Table(name = "dentists_tb")
 public class Dentist extends User{
 
+    @Id
     private Long id;
 
     private String licenseNumber;

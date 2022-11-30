@@ -6,7 +6,10 @@ import com.integradordh.trabajofinal.models.dto.PatientDTO;
 import com.integradordh.trabajofinal.services.IAppointmentService;
 import com.integradordh.trabajofinal.services.IDentistService;
 import com.integradordh.trabajofinal.services.IPatientService;
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -18,6 +21,7 @@ import java.util.Date;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class AppointmentServiceImplTest {
 
     @Autowired
@@ -29,59 +33,14 @@ class AppointmentServiceImplTest {
     @Autowired
     IPatientService patientService;
 
-    @Test
-    void saveAppointment() {
-
+    public void createInstance(){
         LocalTime time = LocalTime.now();
         DentistDTO dentistDTO = new DentistDTO("Ruben","Lazzaro","14123");
+        DentistDTO dentistDTO1 = new DentistDTO("Mario","Jaurez","123456");
+        DentistDTO dentistDTO2 = new DentistDTO("Pablo","Martinez","23456");
         dentistService.saveDentist(dentistDTO);
-
-        Date date = new Date(122, Calendar.NOVEMBER,25);
-        SimpleDateFormat DateFor = new SimpleDateFormat("dd/MM/yyyy");
-        String dateString = DateFor.format(date);
-        PatientDTO patientDTO = new PatientDTO("Andres","Poblete","38416140",date);
-        patientService.savePatient(patientDTO);
-
-        AppointmentDTO appointmentDTO = new AppointmentDTO();
-        appointmentDTO.setPatient(patientService.searchPatientByNationalId("38416140"));
-        appointmentDTO.setDentist(dentistService.searchDentistByLicenseNumber("14123"));
-        appointmentDTO.setDate(dateString);
-        appointmentDTO.setTime(time);
-
-        appointmentService.saveAppointment(appointmentDTO);
-
-        assertEquals("Lazzaro",appointmentService.searchAppointmentById(1L).getDentist().getLastName());
-
-    }
-
-    @Test
-    void searchAppointmentById() {
-        LocalTime time = LocalTime.now();
-        DentistDTO dentistDTO = new DentistDTO("Ruben","Lazzaro","14123");
-
-        dentistService.saveDentist(dentistDTO);
-
-        Date date = new Date(122, Calendar.NOVEMBER,25);
-        SimpleDateFormat DateFor = new SimpleDateFormat("dd/MM/yyyy");
-        String dateString = DateFor.format(date);
-        PatientDTO patientDTO = new PatientDTO("Andres","Poblete","38416140",date);
-
-        patientService.savePatient(patientDTO);
-        AppointmentDTO appointmentDTO = new AppointmentDTO();
-        appointmentDTO.setPatient(patientService.searchPatientByNationalId("38416140"));
-        appointmentDTO.setDentist(dentistService.searchDentistByLicenseNumber("14123"));
-        appointmentDTO.setDate(dateString);
-        appointmentDTO.setTime(time);
-
-        appointmentService.saveAppointment(appointmentDTO);
-        assertNotNull(appointmentService.searchAppointmentById(1L));
-    }
-
-    @Test
-    void searchAppointmentsByDentistLicense() {
-        LocalTime time = LocalTime.now();
-        DentistDTO dentistDTO = new DentistDTO("Ruben","Lazzaro","14123");
-        dentistService.saveDentist(dentistDTO);
+        dentistService.saveDentist(dentistDTO1);
+        dentistService.saveDentist(dentistDTO2);
 
         Date date = new Date(122, Calendar.NOVEMBER,25);
         SimpleDateFormat DateFor = new SimpleDateFormat("dd/MM/yyyy");
@@ -101,86 +60,72 @@ class AppointmentServiceImplTest {
         appointmentService.saveAppointment(appointmentDTO1);
         appointmentService.saveAppointment(appointmentDTO2);
 
+    }
+
+    @Test
+    @Order(1)
+    void saveAppointment() {
+
+        if(appointmentService.searchAppointmentById(1L) == null){
+            createInstance();
+        }
+
+        assertEquals("Lazzaro",appointmentService.searchAppointmentById(1L).getDentist().getLastName());
+
+    }
+
+    @Test
+    @Order(3)
+    void searchAppointmentById() {
+
+        if(appointmentService.searchAppointmentsByDentistLicense("14123").size() == 0){
+            createInstance();
+        }
+        assertNotNull(appointmentService.searchAppointmentById(1L));
+    }
+
+    @Test
+    @Order(4)
+    void searchAppointmentsByDentistLicense() {
+        if(appointmentService.searchAllAppointments().size() < 3){
+            createInstance();
+        }
         assertTrue(appointmentService.searchAppointmentsByDentistLicense("14123").size() >= 3);
 
     }
 
     @Test
+    @Order(5)
     void searchAppointmentsByPatientNationalId() {
-
-        DentistDTO dentistDTO = new DentistDTO(1L,"Mariana","Fernandez","14123");
-        DentistDTO dentistDTO1 = new DentistDTO(2L,"Pablo","Perez","44213");
-        DentistDTO dentistDTO2 = new DentistDTO(3L,"Marcos","Acuña","11231");
-        dentistService.saveDentist(dentistDTO);
-        dentistService.saveDentist(dentistDTO1);
-        dentistService.saveDentist(dentistDTO2);
-
-        LocalTime time = LocalTime.now();
-        Date date = new Date(122, Calendar.NOVEMBER,25);
-        SimpleDateFormat DateFor = new SimpleDateFormat("dd/MM/yyyy");
-        String dateString = DateFor.format(date);
-        PatientDTO patientDTO = new PatientDTO("Andres","Poblete","38416140",date);
-        patientService.savePatient(patientDTO);
-
-        AppointmentDTO appointmentDTO = new AppointmentDTO(dentistService.searchDentistByLicenseNumber("14123"), patientService.searchPatientByNationalId("38416140"), dateString, time);
-        AppointmentDTO appointmentDTO1 = new AppointmentDTO(dentistService.searchDentistByLicenseNumber("44213"), patientService.searchPatientByNationalId("38416140"), dateString, time);
-        AppointmentDTO appointmentDTO2 = new AppointmentDTO(dentistService.searchDentistByLicenseNumber("11231"), patientService.searchPatientByNationalId("38416140"), dateString, time);
-
-
-        appointmentService.saveAppointment(appointmentDTO);
-        appointmentService.saveAppointment(appointmentDTO1);
-        appointmentService.saveAppointment(appointmentDTO2);
-
-
-        assertTrue(appointmentService.searchAppointmentsByPatientNationalId("38416140").size() >= 3);
+        if(appointmentService.searchAllAppointments().size() == 0){
+            createInstance();
+        }
+        assertTrue(appointmentService.searchAppointmentsByPatientNationalId("38416140").size() >= 1);
 
     }
 
     @Test
+    @Order(6)
     void updateAppointment() {
 
-        DentistDTO dentistDTO = new DentistDTO(1L,"Mariana","Fernandez","14123");
-        DentistDTO dentistDTO1 = new DentistDTO(2L,"Pablo","Perez","44213");
-        dentistService.saveDentist(dentistDTO);
-        dentistService.saveDentist(dentistDTO1);
+        if(appointmentService.searchAllAppointments().size() == 0){
+            createInstance();
+        }
+        AppointmentDTO appointmentDTOUpdated = appointmentService.searchAppointmentById(1L);
+        DentistDTO dentistDTO1 = dentistService.searchDentistByLicenseNumber("123456");
+        appointmentDTOUpdated.setDentist(dentistDTO1);
+        appointmentDTOUpdated.setId(1L);
+        appointmentService.updateAppointment(appointmentDTOUpdated);
 
-
-        LocalTime time = LocalTime.now();
-        Date date = new Date(122, Calendar.NOVEMBER,25);
-        SimpleDateFormat DateFor = new SimpleDateFormat("dd/MM/yyyy");
-        String dateString = DateFor.format(date);
-        PatientDTO patientDTO = new PatientDTO("Andres","Poblete","38416140",date);
-        patientService.savePatient(patientDTO);
-
-        AppointmentDTO appointmentDTO = new AppointmentDTO(dentistService.searchDentistByLicenseNumber("14123"), patientService.searchPatientByNationalId("38416140"), dateString, time);
-
-        appointmentService.saveAppointment(appointmentDTO);
-
-        appointmentDTO.setId(1L);
-        appointmentDTO.setDentist(dentistDTO1);
-
-
-        appointmentService.updateAppointment(appointmentDTO);
-
-        assertEquals("44213", appointmentService.searchAppointmentById(1L).getDentist().getLicenseNumber());
+        assertEquals("123456", appointmentService.searchAppointmentById(1L).getDentist().getLicenseNumber());
     }
 
     @Test
+    @Order(7)
     void deleteAppointment() {
-        DentistDTO dentistDTO = new DentistDTO(1L,"Mariana","Fernandez","14123");
-        dentistService.saveDentist(dentistDTO);
-
-        LocalTime time = LocalTime.now();
-        Date date = new Date(122, Calendar.NOVEMBER,25);
-        SimpleDateFormat DateFor = new SimpleDateFormat("dd/MM/yyyy");
-        String dateString = DateFor.format(date);
-        PatientDTO patientDTO = new PatientDTO("Andres","Poblete","38416140",date);
-        patientService.savePatient(patientDTO);
-
-        AppointmentDTO appointmentDTO = new AppointmentDTO(dentistService.searchDentistByLicenseNumber("14123"), patientService.searchPatientByNationalId("38416140"), dateString, time);
-
-        appointmentService.saveAppointment(appointmentDTO);
-
+        if(appointmentService.searchAllAppointments().size() == 0){
+            createInstance();
+        }
         appointmentService.deleteAppointment(1L);
 
         assertNull(appointmentService.searchAppointmentById(1L));
@@ -188,29 +133,12 @@ class AppointmentServiceImplTest {
     }
 
     @Test
+    @Order(2)
     void searchAllAppointments() {
 
-        DentistDTO dentistDTO = new DentistDTO(1L,"Mariana","Fernandez","14123");
-        DentistDTO dentistDTO1 = new DentistDTO(2L,"Pablo","Perez","44213");
-        DentistDTO dentistDTO2 = new DentistDTO(3L,"Marcos","Acuña","11231");
-        dentistService.saveDentist(dentistDTO);
-        dentistService.saveDentist(dentistDTO1);
-        dentistService.saveDentist(dentistDTO2);
-
-        LocalTime time = LocalTime.now();
-        Date date = new Date(122, Calendar.NOVEMBER,25);
-        SimpleDateFormat DateFor = new SimpleDateFormat("dd/MM/yyyy");
-        String dateString = DateFor.format(date);
-        PatientDTO patientDTO = new PatientDTO("Andres","Poblete","38416140",date);
-        patientService.savePatient(patientDTO);
-
-        AppointmentDTO appointmentDTO = new AppointmentDTO(dentistService.searchDentistByLicenseNumber("14123"), patientService.searchPatientByNationalId("38416140"), dateString, time);
-        AppointmentDTO appointmentDTO1 = new AppointmentDTO(dentistService.searchDentistByLicenseNumber("44213"), patientService.searchPatientByNationalId("38416140"), dateString, time);
-        AppointmentDTO appointmentDTO2 = new AppointmentDTO(dentistService.searchDentistByLicenseNumber("11231"), patientService.searchPatientByNationalId("38416140"), dateString, time);
-
-        appointmentService.saveAppointment(appointmentDTO);
-        appointmentService.saveAppointment(appointmentDTO1);
-        appointmentService.saveAppointment(appointmentDTO2);
+       if(appointmentService.searchAllAppointments().size() == 0){
+           createInstance();
+       }
 
 
         assertTrue(appointmentService.searchAllAppointments().size() >= 3);

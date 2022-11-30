@@ -13,7 +13,6 @@ import java.util.Date;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@JsonIgnoreProperties
 public class PatientDTO extends UserDTO {
 
     private String nationalId;
@@ -23,6 +22,13 @@ public class PatientDTO extends UserDTO {
 
     public PatientDTO(Long id, String name, String lastName, String nationalId, String registrationDate, String address) {
         super(id, name, lastName);
+        this.nationalId = nationalId;
+        this.registrationDate = registrationDate;
+        this.address = address;
+    }
+
+    public PatientDTO(String name, String lastName, String nationalId, String registrationDate, String address) {
+        super(name, lastName);
         this.nationalId = nationalId;
         this.registrationDate = registrationDate;
         this.address = address;
@@ -41,6 +47,8 @@ public class PatientDTO extends UserDTO {
         this.nationalId = nationalId;
         this.registrationDate = registrationDate;
     }
+
+
 
     @Override
     public String toString() {
