@@ -1,5 +1,6 @@
 package com.integradordh.trabajofinal.controllers;
 
+import com.integradordh.trabajofinal.exceptions.BadRequestException;
 import com.integradordh.trabajofinal.models.dto.UserDTO;
 import com.integradordh.trabajofinal.services.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,18 +24,22 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public UserDTO getUser(@PathVariable Long id){
-        return userService.searchUserById(id);
+    public UserDTO getUser(@PathVariable Long id) throws BadRequestException {
+        try {
+            return userService.searchUserById(id);
+        } catch (BadRequestException e) {
+            throw new BadRequestException(e.getMessage());
+        }
     }
 
     @PatchMapping("/update")
-    public ResponseEntity<?> modifyUser(@RequestBody UserDTO userDTO) {
+    public ResponseEntity<?> modifyUser(@RequestBody UserDTO userDTO) throws BadRequestException{
         userService.updateUser(userDTO);
         return ResponseEntity.ok().body("User updated succesfully" + userService.searchUserById(userDTO.getId()).toString());
     }
 
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<?> deleteUserById(@PathVariable Long id){
+    public ResponseEntity<?> deleteUserById(@PathVariable Long id) throws BadRequestException{
         String userInfo = userService.searchUserById(id).toString();
         userService.deleteUserById(id);
         return ResponseEntity.ok().body("User deleted succesfully" + userInfo);
