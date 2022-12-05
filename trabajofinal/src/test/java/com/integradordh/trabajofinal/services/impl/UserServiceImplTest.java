@@ -1,7 +1,7 @@
 package com.integradordh.trabajofinal.services.impl;
 
 import com.integradordh.trabajofinal.models.dto.UserDTO;
-import com.integradordh.trabajofinal.services.IUserService;
+import com.integradordh.trabajofinal.models.services.IUserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -25,7 +25,7 @@ class UserServiceImplTest {
     }
 
     @Test
-    void saveUser() {
+    void saveUser() throws BadRequestException {
         if(userService.searchAllUsers().size() == 0){
             createInstance();
         }
@@ -33,7 +33,7 @@ class UserServiceImplTest {
     }
 
     @Test
-    void searchById() {
+    void searchById() throws BadRequestException {
         if(userService.searchAllUsers().size() == 0){
             createInstance();
         }
@@ -41,7 +41,7 @@ class UserServiceImplTest {
     }
 
     @Test
-    void updateUser() {
+    void updateUser() throws BadRequestException {
         if(userService.searchAllUsers().size() == 0){
             createInstance();
         }
@@ -51,7 +51,7 @@ class UserServiceImplTest {
     }
 
     @Test
-    void deleteUserById() {
+    void deleteUserById() throws BadRequestException {
         if(userService.searchAllUsers().size() == 0){
             createInstance();
         }

@@ -1,7 +1,7 @@
 package com.integradordh.trabajofinal.controllers;
 
 import com.integradordh.trabajofinal.models.dto.DentistDTO;
-import com.integradordh.trabajofinal.services.IDentistService;
+import com.integradordh.trabajofinal.models.services.IDentistService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

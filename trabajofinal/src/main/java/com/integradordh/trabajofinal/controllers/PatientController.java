@@ -1,7 +1,7 @@
 package com.integradordh.trabajofinal.controllers;
 
 import com.integradordh.trabajofinal.models.dto.PatientDTO;
-import com.integradordh.trabajofinal.services.IPatientService;
+import com.integradordh.trabajofinal.models.services.IPatientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

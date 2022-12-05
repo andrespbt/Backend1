@@ -1,7 +1,7 @@
 package com.integradordh.trabajofinal.services.impl;
 
 import com.integradordh.trabajofinal.models.dto.DentistDTO;
-import com.integradordh.trabajofinal.services.IDentistService;
+import com.integradordh.trabajofinal.models.services.IDentistService;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

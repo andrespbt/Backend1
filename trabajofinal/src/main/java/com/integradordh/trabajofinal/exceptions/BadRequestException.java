@@ -2,7 +2,7 @@ package com.integradordh.trabajofinal.exceptions;
 
 public class BadRequestException extends Exception{
 
-    public BadRequestException(String message) {
+    public BadRequestException(String message){
         super(message);
     }
 }

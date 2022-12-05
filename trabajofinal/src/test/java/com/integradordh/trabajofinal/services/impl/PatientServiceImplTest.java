@@ -1,7 +1,7 @@
 package com.integradordh.trabajofinal.services.impl;
 
 import com.integradordh.trabajofinal.models.dto.PatientDTO;
-import com.integradordh.trabajofinal.services.IPatientService;
+import com.integradordh.trabajofinal.models.services.IPatientService;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;

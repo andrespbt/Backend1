@@ -29,3 +29,157 @@ LastName='Poblete'
 Name='Martin'
 LastName='Poblete'
 [ERROR] 2022-12-01 18:23:17.287 [http-nio-8080-exec-3] UserServiceImpl - User with id: 2 doesn't exists
+[INFO ] 2022-12-04 15:10:39.785 [main] AppointmentServiceImplTest - Starting AppointmentServiceImplTest using Java 19 with PID 45105 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 15:10:39.788 [main] AppointmentServiceImplTest - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 15:10:39.788 [main] AppointmentServiceImplTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 15:10:42.265 [main] AppointmentServiceImplTest - Started AppointmentServiceImplTest in 2.608 seconds (process running for 3.696)
+[INFO ] 2022-12-04 16:58:23.185 [main] AppointmentServiceImplTest - Starting AppointmentServiceImplTest using Java 19 with PID 47083 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 16:58:23.188 [main] AppointmentServiceImplTest - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 16:58:23.188 [main] AppointmentServiceImplTest - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 16:58:26.475 [main] AppointmentServiceImplTest - Started AppointmentServiceImplTest in 3.43 seconds (process running for 4.909)
+[INFO ] 2022-12-04 16:58:49.812 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 47113 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 16:58:49.819 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 16:58:49.820 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 16:58:52.391 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.781 seconds (process running for 3.527)
+[INFO ] 2022-12-04 17:35:04.787 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48069 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 17:35:04.805 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 17:35:04.806 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 17:35:07.245 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.656 seconds (process running for 3.419)
+[INFO ] 2022-12-04 17:35:58.604 [http-nio-8080-exec-2] UserServiceImpl - User saved succesfully.
+Name='Martin'
+LastName='Poblete'
+[ERROR] 2022-12-04 17:36:31.336 [http-nio-8080-exec-3] UserServiceImpl - User with id: 2 doesn't exists
+[INFO ] 2022-12-04 17:37:31.875 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48197 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 17:37:31.881 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 17:37:31.881 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 17:37:34.231 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.54 seconds (process running for 3.447)
+[ERROR] 2022-12-04 17:37:38.590 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
+[INFO ] 2022-12-04 17:44:14.508 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48377 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 17:44:14.512 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 17:44:14.513 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 17:44:16.823 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.502 seconds (process running for 3.186)
+[ERROR] 2022-12-04 17:44:21.760 [http-nio-8080-exec-1] UserServiceImpl - User with id: 2 doesn't exists
+[ERROR] 2022-12-04 17:44:26.707 [http-nio-8080-exec-4] UserServiceImpl - User with id: 2 doesn't exists
+[ERROR] 2022-12-04 17:44:30.390 [http-nio-8080-exec-6] UserServiceImpl - User with id: 1 doesn't exists
+[ERROR] 2022-12-04 17:45:52.161 [http-nio-8080-exec-8] UserServiceImpl - User with id: 2 doesn't exists
+[INFO ] 2022-12-04 17:47:53.592 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48428 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 17:47:53.598 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 17:47:53.600 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 17:47:56.030 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.609 seconds (process running for 3.383)
+[ERROR] 2022-12-04 17:47:59.575 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
+[ERROR] 2022-12-04 17:48:00.752 [http-nio-8080-exec-4] UserServiceImpl - User with id: 2 doesn't exists
+[INFO ] 2022-12-04 17:52:19.457 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48582 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 17:52:19.463 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 17:52:19.464 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 17:52:21.828 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.557 seconds (process running for 3.339)
+[ERROR] 2022-12-04 17:52:25.986 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
+[ERROR] 2022-12-04 17:52:29.225 [http-nio-8080-exec-3] UserServiceImpl - User with id: 2 doesn't exists
+[INFO ] 2022-12-04 17:53:16.207 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48598 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 17:53:16.212 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 17:53:16.212 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 17:53:18.529 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.55 seconds (process running for 3.1)
+[ERROR] 2022-12-04 17:53:21.662 [http-nio-8080-exec-1] UserServiceImpl - User with id: 2 doesn't exists
+[INFO ] 2022-12-04 17:53:45.273 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48608 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 17:53:45.279 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 17:53:45.280 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 17:53:47.596 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.516 seconds (process running for 3.058)
+[ERROR] 2022-12-04 17:53:51.339 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
+[INFO ] 2022-12-04 17:54:50.055 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48631 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 17:54:50.062 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 17:54:50.063 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 17:54:52.376 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.53 seconds (process running for 3.253)
+[ERROR] 2022-12-04 17:54:55.685 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
+[INFO ] 2022-12-04 17:55:52.721 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48676 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 17:55:52.726 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 17:55:52.730 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 17:55:55.107 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.591 seconds (process running for 3.381)
+[ERROR] 2022-12-04 17:55:57.941 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
+[INFO ] 2022-12-04 17:59:47.559 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48841 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 17:59:47.563 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 17:59:47.564 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 17:59:49.876 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.503 seconds (process running for 3.264)
+[ERROR] 2022-12-04 17:59:53.351 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
+[INFO ] 2022-12-04 18:10:18.331 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 49062 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 18:10:18.335 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 18:10:18.340 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 18:10:20.608 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.466 seconds (process running for 3.278)
+[ERROR] 2022-12-04 18:10:24.327 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
+[INFO ] 2022-12-04 18:11:21.696 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 49075 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 18:11:21.702 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 18:11:21.703 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 18:11:23.946 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.459 seconds (process running for 3.041)
+[ERROR] 2022-12-04 18:11:27.018 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
+[INFO ] 2022-12-04 18:11:37.753 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 49080 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 18:11:37.758 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 18:11:37.763 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 18:11:40.024 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.447 seconds (process running for 3.031)
+[ERROR] 2022-12-04 18:11:43.278 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
+[INFO ] 2022-12-04 18:26:33.469 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 49447 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 18:26:33.477 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 18:26:33.478 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 18:26:35.809 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.529 seconds (process running for 3.241)
+[ERROR] 2022-12-04 18:26:39.726 [http-nio-8080-exec-1] UserServiceImpl - User with id: 2 doesn't exists
+[WARN ] 2022-12-04 18:26:59.040 [http-nio-8080-exec-3] UserServiceImpl - Bad request. User needs name and lastname
+[INFO ] 2022-12-04 18:27:09.746 [http-nio-8080-exec-5] UserServiceImpl - User saved succesfully.
+Name='Martin'
+LastName='Poblete'
+[ERROR] 2022-12-04 18:27:31.004 [http-nio-8080-exec-6] UserServiceImpl - User with id: 2 doesn't exists
+[INFO ] 2022-12-04 18:27:33.860 [http-nio-8080-exec-7] UserServiceImpl - User found 
+Name='Martin'
+LastName='Poblete'
+[INFO ] 2022-12-04 18:27:33.862 [http-nio-8080-exec-7] UserServiceImpl - User found 
+Name='Martin'
+LastName='Poblete'
+[ERROR] 2022-12-04 18:29:03.325 [http-nio-8080-exec-10] UserServiceImpl - User with id: 2 doesn't exists
+[INFO ] 2022-12-04 18:30:33.907 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 49481 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 18:30:33.913 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 18:30:33.922 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 18:30:36.187 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.454 seconds (process running for 3.154)
+[ERROR] 2022-12-04 18:30:40.694 [http-nio-8080-exec-1] UserServiceImpl - User with id: 2 doesn't exists
+[ERROR] 2022-12-04 18:30:45.080 [http-nio-8080-exec-3] UserServiceImpl - User with id: 1 doesn't exists
+[INFO ] 2022-12-04 18:30:47.566 [http-nio-8080-exec-4] UserServiceImpl - User saved succesfully.
+Name='Martin'
+LastName='Poblete'
+[INFO ] 2022-12-04 18:30:49.872 [http-nio-8080-exec-5] UserServiceImpl - User found 
+Name='Martin'
+LastName='Poblete'
+[INFO ] 2022-12-04 18:49:35.740 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 49745 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 18:49:35.745 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 18:49:35.751 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 18:49:38.097 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.574 seconds (process running for 3.25)
+[ERROR] 2022-12-04 18:49:45.774 [http-nio-8080-exec-2] UserServiceImpl - User with id: 1 doesn't exists
+[INFO ] 2022-12-04 18:50:16.837 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 49757 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 18:50:16.842 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 18:50:16.843 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 18:50:19.173 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.518 seconds (process running for 3.22)
+[ERROR] 2022-12-04 18:50:22.245 [http-nio-8080-exec-2] UserServiceImpl - User with id: 1 doesn't exists
+[ERROR] 2022-12-04 18:50:40.973 [http-nio-8080-exec-3] UserServiceImpl - User with id: 1 doesn't exists
+[ERROR] 2022-12-04 18:50:49.425 [http-nio-8080-exec-4] UserServiceImpl - User with id: 1 doesn't exists
+[INFO ] 2022-12-04 18:51:32.891 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 49769 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 18:51:32.896 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 18:51:32.897 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 18:51:35.261 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.553 seconds (process running for 3.082)
+[ERROR] 2022-12-04 18:51:38.809 [http-nio-8080-exec-2] UserServiceImpl - User with id: 1 doesn't exists
+[ERROR] 2022-12-04 19:08:46.905 [http-nio-8080-exec-5] UserServiceImpl - User with id: 1 doesn't exists
+[INFO ] 2022-12-04 19:08:50.467 [http-nio-8080-exec-6] UserServiceImpl - User saved succesfully.
+Name='Martin'
+LastName='Poblete'
+[INFO ] 2022-12-04 19:08:52.423 [http-nio-8080-exec-7] UserServiceImpl - User found 
+Name='Martin'
+LastName='Poblete'
+[INFO ] 2022-12-04 19:09:02.021 [http-nio-8080-exec-8] UserServiceImpl - User found 
+Name='Francisco'
+LastName='Poblete'
+[INFO ] 2022-12-04 19:09:12.434 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 50133 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-04 19:09:12.439 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-04 19:09:12.439 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-04 19:09:14.857 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.61 seconds (process running for 3.38)
+[INFO ] 2022-12-04 19:09:18.530 [http-nio-8080-exec-2] UserServiceImpl - User saved succesfully.
+Name='Martin'
+LastName='Poblete'
+[INFO ] 2022-12-04 19:09:20.664 [http-nio-8080-exec-3] UserServiceImpl - User found 
+Name='Martin'
+LastName='Poblete'
+[INFO ] 2022-12-04 19:09:29.105 [http-nio-8080-exec-4] UserServiceImpl - User found 
+Name='Martin'
+LastName='Poblete'

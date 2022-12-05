@@ -1,10 +1,10 @@
-package com.integradordh.trabajofinal.services.impl;
+package com.integradordh.trabajofinal.models.services.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.integradordh.trabajofinal.models.Dentist;
 import com.integradordh.trabajofinal.models.dto.DentistDTO;
+import com.integradordh.trabajofinal.models.services.IDentistService;
 import com.integradordh.trabajofinal.repository.IDentistRepository;
-import com.integradordh.trabajofinal.services.IDentistService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +13,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
+// TODO: Agregar loggers (info, error, etc)
+// TODO: Agregar excepciones
 @Service
 public class DentistServiceImpl implements IDentistService {
 

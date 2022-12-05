@@ -1,4 +1,4 @@
-package com.integradordh.trabajofinal.services;
+package com.integradordh.trabajofinal.models.services;
 
 import com.integradordh.trabajofinal.models.dto.PatientDTO;
 

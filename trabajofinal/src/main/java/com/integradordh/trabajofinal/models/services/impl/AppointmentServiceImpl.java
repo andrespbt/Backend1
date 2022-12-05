@@ -1,4 +1,4 @@
-package com.integradordh.trabajofinal.services.impl;
+package com.integradordh.trabajofinal.models.services.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.integradordh.trabajofinal.models.Appointment;
@@ -6,12 +6,14 @@ import com.integradordh.trabajofinal.models.Dentist;
 import com.integradordh.trabajofinal.models.Patient;
 import com.integradordh.trabajofinal.models.dto.AppointmentDTO;
 import com.integradordh.trabajofinal.repository.IAppointmentRepository;
-import com.integradordh.trabajofinal.services.IAppointmentService;
+import com.integradordh.trabajofinal.models.services.IAppointmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 
+// TODO: Agregar loggers (info, error, etc)
+// TODO: Agregar excepciones
 @Service
 public class AppointmentServiceImpl implements IAppointmentService {
 
