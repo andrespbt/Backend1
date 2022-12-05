@@ -183,3 +183,48 @@ LastName='Poblete'
 [INFO ] 2022-12-04 19:09:29.105 [http-nio-8080-exec-4] UserServiceImpl - User found 
 Name='Martin'
 LastName='Poblete'
+[INFO ] 2022-12-05 14:02:46.410 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 1865 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-05 14:02:46.419 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-05 14:02:46.420 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-05 14:02:48.916 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.717 seconds (process running for 3.724)
+[ERROR] 2022-12-05 14:02:53.600 [http-nio-8080-exec-2] UserServiceImpl - There aren't any users.
+[INFO ] 2022-12-05 14:02:59.920 [http-nio-8080-exec-4] UserServiceImpl - User saved succesfully.
+Name='Martin'
+LastName='Poblete'
+[INFO ] 2022-12-05 14:03:02.823 [http-nio-8080-exec-5] UserServiceImpl - Showing all users.
+[INFO ] 2022-12-05 14:03:28.187 [http-nio-8080-exec-6] UserServiceImpl - User saved succesfully.
+Name='Martin'
+LastName='Poblete'
+[INFO ] 2022-12-05 14:03:29.418 [http-nio-8080-exec-7] UserServiceImpl - User saved succesfully.
+Name='Martin'
+LastName='Poblete'
+[INFO ] 2022-12-05 14:03:32.805 [http-nio-8080-exec-8] UserServiceImpl - Showing all users.
+[INFO ] 2022-12-05 14:07:11.993 [http-nio-8080-exec-1] UserServiceImpl - User found 
+Name='Martin'
+LastName='Poblete'
+[INFO ] 2022-12-05 14:07:11.995 [http-nio-8080-exec-1] UserServiceImpl - User deleted Optional[com.integradordh.trabajofinal.models.User@38f2e02f]
+[ERROR] 2022-12-05 14:07:16.144 [http-nio-8080-exec-2] UserServiceImpl - User with id: 3 doesn't exists.
+[INFO ] 2022-12-05 14:07:22.103 [http-nio-8080-exec-4] UserServiceImpl - User found 
+Name='Martin'
+LastName='Poblete'
+[INFO ] 2022-12-05 14:07:22.110 [http-nio-8080-exec-4] UserServiceImpl - User deleted Optional[com.integradordh.trabajofinal.models.User@536b8ab2]
+[INFO ] 2022-12-05 14:16:54.978 [http-nio-8080-exec-8] UserServiceImpl - User found 
+Name='Martin'
+LastName='Poblete'
+[INFO ] 2022-12-05 14:16:54.980 [http-nio-8080-exec-8] UserServiceImpl - User deleted Optional[com.integradordh.trabajofinal.models.User@55eb6bdf]
+[ERROR] 2022-12-05 14:16:59.982 [http-nio-8080-exec-9] UserServiceImpl - User with id 1 doesn't exists.
+[INFO ] 2022-12-05 14:17:04.922 [http-nio-8080-exec-1] UserServiceImpl - User saved succesfully.
+Name='Martin'
+LastName='Poblete'
+[ERROR] 2022-12-05 14:17:11.448 [http-nio-8080-exec-2] UserServiceImpl - User with id 5 doesn't exists.
+[INFO ] 2022-12-05 14:18:45.510 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 2012 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-05 14:18:45.513 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
+[INFO ] 2022-12-05 14:18:45.514 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-12-05 14:18:47.699 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.351 seconds (process running for 3.064)
+[INFO ] 2022-12-05 14:18:53.749 [http-nio-8080-exec-2] UserServiceImpl - User saved succesfully.
+Name='Martin'
+LastName='Poblete'
+[INFO ] 2022-12-05 14:18:57.627 [http-nio-8080-exec-3] UserServiceImpl - User with id 1 updated succesfully. Method: updateUser
+[INFO ] 2022-12-05 14:18:57.632 [http-nio-8080-exec-3] UserServiceImpl - User found 
+Name='Francisco'
+LastName='Poblete'

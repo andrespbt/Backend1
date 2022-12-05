@@ -46,24 +46,42 @@ public class UserController {
         ResponseEntity<String> response = null;
             try {
                 userService.updateUser(userDTO);
-                response = ResponseEntity.status(HttpStatus.OK).body("User modified " + userDTO.toString());
+                UserDTO userUpdated = userService.searchUserById(userDTO.getId());
+                response = ResponseEntity.status(HttpStatus.OK).body("User modified " + userUpdated.toString());
 
             }catch (Exception e){
                e.printStackTrace();
+               response = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("User can't be modified.");
             }
-        return ResponseEntity.ok().body("User updated succesfully" + userService.searchUserById(userDTO.getId()).toString());
+        return response;
     }
 
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> deleteUserById(@PathVariable Long id) throws ResourceNotFoundException {
-        String userInfo = userService.searchUserById(id).toString();
-        userService.deleteUserById(id);
-        return ResponseEntity.ok().body("User deleted succesfully" + userInfo);
+        ResponseEntity<String> response = null;
+        try {
+            String userInfo = userService.searchUserById(id).toString();
+            userService.deleteUserById(id);
+            response = ResponseEntity.ok().body("User deleted succesfully" + userInfo);
+        }catch (Exception e) {
+            e.printStackTrace();
+            response = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("User can't be deleted.");
+        }
+
+        return response;
     }
 
     @GetMapping
-    public Set<UserDTO> searchAllUsers() {
-        return userService.searchAllUsers();
+    public ResponseEntity<?> searchAllUsers() throws ResourceNotFoundException {
+        ResponseEntity<String> response = null;
+        try {
+            Set<UserDTO> users = userService.searchAllUsers();
+            response = ResponseEntity.ok().body(users.toString());
+        }catch (Exception e) {
+            e.printStackTrace();
+            response = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Users not found.");
+        }
+        return response;
     }
 
 

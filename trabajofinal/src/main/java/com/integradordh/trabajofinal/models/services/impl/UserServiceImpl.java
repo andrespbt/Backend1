@@ -16,9 +16,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
-
-// TODO: Agregar loggers (info, error, etc)
-// TODO: Agregar excepciones
 @Service
 public class UserServiceImpl implements IUserService {
 
@@ -35,8 +32,8 @@ public class UserServiceImpl implements IUserService {
     public void saveUser(UserDTO userDTO) throws BadRequestException {
 
         if (userDTO.getName() == null || userDTO.getLastName() == null){
-            logger.warn("Bad request. User needs name and lastname");
-            throw new BadRequestException("Bad request. User needs name and lastname");
+            logger.warn("Bad request. User needs name and lastname.");
+            throw new BadRequestException("Bad request. User needs name and lastname.");
         }else {
             User user = objectMapper.convertValue(userDTO, User.class);
             userRepository.save(user);
@@ -56,8 +53,8 @@ public class UserServiceImpl implements IUserService {
             userDTO = objectMapper.convertValue(userOptional.get(),UserDTO.class);
             logger.info("User found " + userDTO.toString());
         }else {
-            logger.error("User with id: " + id + " doesn't exists");
-            throw new ResourceNotFoundException("User with id " + id + " doesn't exists");
+            logger.error("User with id: " + id + " doesn't exists.");
+            throw new ResourceNotFoundException("User with id " + id + " doesn't exists.");
         }
         return userDTO;
     }
@@ -70,7 +67,7 @@ public class UserServiceImpl implements IUserService {
         if(userOptional.isPresent()){
             userToUpdate = objectMapper.convertValue(userOptional.get(), User.class);
             if(userToUpdate.getName() == null && userToUpdate.getLastName() == null || userToUpdate.equals(objectMapper.convertValue(userDTO, User.class))){
-                throw new BadRequestException("User is either empty or is the same than the older user");
+                throw new BadRequestException("User is either empty or is the same than the older user.");
             }
 
             if(userDTO.getName() != null) {
@@ -80,21 +77,28 @@ public class UserServiceImpl implements IUserService {
             if(userDTO.getLastName() != null){
                 userToUpdate.setLastName(userDTO.getLastName());
             }
-
+            logger.info("User with id " + userDTO.getId() + " updated succesfully. Method: updateUser");
             userRepository.save(userToUpdate);
         }else {
-            logger.error("User with id " + userDTO.getId() + " doesn't exists");
-            throw new ResourceNotFoundException("User with id " + userDTO.getId() + " doesn't exists");
+            logger.error("User with id " + userDTO.getId() + " doesn't exists. Method: updateUser");
+            throw new ResourceNotFoundException("User with id " + userDTO.getId() + " doesn't exists.");
         }
     }
 
     @Override
-    public void deleteUserById(Long id) {
-        userRepository.deleteById(id);
+    public void deleteUserById(Long id) throws ResourceNotFoundException {
+        if( userRepository.findById(id).isEmpty()){
+            logger.error("User with id " + id + " doesn't exists. Method: deleteUserById");
+            throw new ResourceNotFoundException("User with id " + id + " doesn't exists.");
+        }else {
+            logger.info("User deleted " + userRepository.findById(id) + ". Method: deleteUserById");
+            userRepository.deleteById(id);
+        }
+
     }
 
     @Override
-    public Set<UserDTO> searchAllUsers() {
+    public Set<UserDTO> searchAllUsers() throws ResourceNotFoundException {
 
         List<User> users = userRepository.findAll();
 
@@ -105,7 +109,15 @@ public class UserServiceImpl implements IUserService {
             usersDTO.add(objectMapper.convertValue(user, UserDTO.class));
         }
 
-        return usersDTO;
+        if( usersDTO.size() == 0){
+            logger.error("There aren't any users. Method: searchAllUsers");
+            throw new ResourceNotFoundException("There aren't any users.");
+        }else {
+            logger.info("Showing all users. Method: searchAllUsers");
+            return usersDTO;
+        }
+
+
 
     }
 }

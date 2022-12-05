@@ -14,8 +14,8 @@ public interface IUserService {
 
     void updateUser(UserDTO userDTO) throws ResourceNotFoundException, BadRequestException;
 
-    void deleteUserById(Long id);
+    void deleteUserById(Long id) throws ResourceNotFoundException;
 
-    Set<UserDTO> searchAllUsers();
+    Set<UserDTO> searchAllUsers() throws ResourceNotFoundException;
 
 }
