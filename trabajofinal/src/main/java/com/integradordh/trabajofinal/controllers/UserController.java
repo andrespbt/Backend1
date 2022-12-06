@@ -30,11 +30,11 @@ public class UserController {
 
     @GetMapping("/{id}")
     public ResponseEntity<?> getUser(@PathVariable Long id) throws ResourceNotFoundException {
-        ResponseEntity<String> response = null;
+        ResponseEntity<?> response = null;
         try{
             UserDTO user = userService.searchUserById(id);
-            response = ResponseEntity.status(HttpStatus.OK).body(user.toString());
-        }catch (Exception e) {
+            response = ResponseEntity.status(HttpStatus.OK).body(user);
+        }catch (ResourceNotFoundException e) {
             response = ResponseEntity.status(HttpStatus.NOT_FOUND).body("User with id " + id + " doesn't exists");
             e.printStackTrace();
         }
@@ -43,11 +43,11 @@ public class UserController {
 
     @PatchMapping("/update")
     public ResponseEntity<?> modifyUser(@RequestBody UserDTO userDTO) throws ResourceNotFoundException, BadRequestException {
-        ResponseEntity<String> response = null;
+        ResponseEntity<?> response = null;
             try {
                 userService.updateUser(userDTO);
                 UserDTO userUpdated = userService.searchUserById(userDTO.getId());
-                response = ResponseEntity.status(HttpStatus.OK).body("User modified " + userUpdated.toString());
+                response = ResponseEntity.status(HttpStatus.OK).body(userUpdated);
 
             }catch (Exception e){
                e.printStackTrace();
@@ -58,11 +58,11 @@ public class UserController {
 
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> deleteUserById(@PathVariable Long id) throws ResourceNotFoundException {
-        ResponseEntity<String> response = null;
+        ResponseEntity<?> response = null;
         try {
-            String userInfo = userService.searchUserById(id).toString();
+            UserDTO userDeleted = userService.searchUserById(id);
             userService.deleteUserById(id);
-            response = ResponseEntity.ok().body("User deleted succesfully" + userInfo);
+            response = ResponseEntity.ok().body(userDeleted);
         }catch (Exception e) {
             e.printStackTrace();
             response = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("User can't be deleted.");
@@ -73,10 +73,10 @@ public class UserController {
 
     @GetMapping
     public ResponseEntity<?> searchAllUsers() throws ResourceNotFoundException {
-        ResponseEntity<String> response = null;
+        ResponseEntity<?> response = null;
         try {
             Set<UserDTO> users = userService.searchAllUsers();
-            response = ResponseEntity.ok().body(users.toString());
+            response = ResponseEntity.ok().body(users);
         }catch (Exception e) {
             e.printStackTrace();
             response = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Users not found.");

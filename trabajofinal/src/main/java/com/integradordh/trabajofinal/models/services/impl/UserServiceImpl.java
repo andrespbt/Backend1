@@ -108,14 +108,8 @@ public class UserServiceImpl implements IUserService {
 
             usersDTO.add(objectMapper.convertValue(user, UserDTO.class));
         }
-
-        if( usersDTO.size() == 0){
-            logger.error("There aren't any users. Method: searchAllUsers");
-            throw new ResourceNotFoundException("There aren't any users.");
-        }else {
             logger.info("Showing all users. Method: searchAllUsers");
             return usersDTO;
-        }
 
 
 

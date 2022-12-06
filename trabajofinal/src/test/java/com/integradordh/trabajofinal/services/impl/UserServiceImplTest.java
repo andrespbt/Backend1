@@ -1,5 +1,7 @@
 package com.integradordh.trabajofinal.services.impl;
 
+import com.integradordh.trabajofinal.exceptions.BadRequestException;
+import com.integradordh.trabajofinal.exceptions.ResourceNotFoundException;
 import com.integradordh.trabajofinal.models.dto.UserDTO;
 import com.integradordh.trabajofinal.models.services.IUserService;
 import org.junit.jupiter.api.Test;
@@ -14,7 +16,8 @@ class UserServiceImplTest {
     @Autowired
     IUserService userService;
 
-    public void createInstance(){
+
+    public void createInstance() throws BadRequestException {
         UserDTO userDTO = new UserDTO("Andres", "Poblete");
         UserDTO userDTO1 = new UserDTO("Fernando", "Ramirez");
         UserDTO userDTO2 = new UserDTO("Lucas", "Galvan");
@@ -25,7 +28,7 @@ class UserServiceImplTest {
     }
 
     @Test
-    void saveUser() throws BadRequestException {
+    void saveUser() throws BadRequestException, ResourceNotFoundException {
         if(userService.searchAllUsers().size() == 0){
             createInstance();
         }
@@ -33,7 +36,7 @@ class UserServiceImplTest {
     }
 
     @Test
-    void searchById() throws BadRequestException {
+    void searchById() throws BadRequestException, ResourceNotFoundException {
         if(userService.searchAllUsers().size() == 0){
             createInstance();
         }
@@ -41,7 +44,7 @@ class UserServiceImplTest {
     }
 
     @Test
-    void updateUser() throws BadRequestException {
+    void updateUser() throws BadRequestException, ResourceNotFoundException {
         if(userService.searchAllUsers().size() == 0){
             createInstance();
         }
@@ -51,20 +54,21 @@ class UserServiceImplTest {
     }
 
     @Test
-    void deleteUserById() throws BadRequestException {
+    void deleteUserById() throws BadRequestException, ResourceNotFoundException {
         if(userService.searchAllUsers().size() == 0){
             createInstance();
         }
+
         userService.deleteUserById(1L);
-        assertNull(userService.searchUserById(1L));
+        assertThrows(ResourceNotFoundException.class, () -> { userService.searchUserById(1L);});
     }
 
     @Test
-    void searchAll() {
+    void searchAll() throws ResourceNotFoundException, BadRequestException {
         if(userService.searchAllUsers().size() == 0){
             createInstance();
         }
-        assertTrue(userService.searchAllUsers().size() >= 3);
+        assertTrue(userService.searchAllUsers().size() > 0);
 
 
     }
