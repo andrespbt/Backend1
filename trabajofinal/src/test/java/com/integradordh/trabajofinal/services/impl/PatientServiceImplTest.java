@@ -1,7 +1,9 @@
 package com.integradordh.trabajofinal.services.impl;
 
-import com.integradordh.trabajofinal.models.dto.PatientDTO;
-import com.integradordh.trabajofinal.models.services.IPatientService;
+import com.integradordh.trabajofinal.exceptions.BadRequestException;
+import com.integradordh.trabajofinal.exceptions.ResourceNotFoundException;
+import com.integradordh.trabajofinal.models.Patient;
+import com.integradordh.trabajofinal.services.IPatientService;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -9,8 +11,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.Calendar;
-import java.util.Date;
+import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -21,20 +22,20 @@ class PatientServiceImplTest {
     @Autowired
     IPatientService patientService;
 
-    public void createInstance(){
-        Date date = new Date(122, Calendar.NOVEMBER,25);
-        PatientDTO patientDTO = new PatientDTO("Andres","Poblete","38416140",date);
-        PatientDTO patientDTO1 = new PatientDTO("Pablo","Guevara","11453231",date);
-        PatientDTO patientDTO2 = new PatientDTO("Marcos","Mitre","5432123",date);
-        patientService.savePatient(patientDTO);
-        patientService.savePatient(patientDTO1);
-        patientService.savePatient(patientDTO2);
+    public void createInstance() throws BadRequestException {
+        LocalDate date = LocalDate.of(LocalDate.now().getYear(),LocalDate.now().getMonthValue(), LocalDate.now().getDayOfMonth());
+        Patient patient = new Patient("Andres","Poblete","38416140", date, "Mendoza");
+        Patient patient1 = new Patient("Pablo","Guevara","11453231", date, "San Juan");
+        Patient patient2 = new Patient("Marcos","Mitre","5432123", date, "Entre Rios");
+        patientService.savePatient(patient);
+        patientService.savePatient(patient1);
+        patientService.savePatient(patient2);
     }
 
 
     @Test
     @Order(1)
-    void savePatient() {
+    void savePatient() throws BadRequestException, ResourceNotFoundException {
         if(patientService.searchAllPatients().size() == 0){
             createInstance();
         }
@@ -42,7 +43,7 @@ class PatientServiceImplTest {
     }
 
     @Test
-    void searchPatientById() {
+    void searchPatientById() throws BadRequestException, ResourceNotFoundException {
 
         if(patientService.searchAllPatients().size() == 0){
             createInstance();
@@ -52,7 +53,7 @@ class PatientServiceImplTest {
     }
 
     @Test
-    void searchPatientByNationalId() {
+    void searchPatientByNationalId() throws BadRequestException, ResourceNotFoundException {
         if(patientService.searchAllPatients().size() == 0){
             createInstance();
         }
@@ -62,27 +63,28 @@ class PatientServiceImplTest {
 
     @Test
     @Order(2)
-    void updatePatient() {
+    void updatePatient() throws BadRequestException, ResourceNotFoundException {
 
         if(patientService.searchAllPatients().size() == 0){
             createInstance();
         }
-        PatientDTO patientDTO1 = new PatientDTO(1L,"Andres","Ramirez","38416140","2002", "Avenu");
-        patientService.updatePatient(patientDTO1);
+        LocalDate date = LocalDate.of(LocalDate.now().getYear(),LocalDate.now().getMonthValue(), LocalDate.now().getDayOfMonth());
+        Patient patient = new Patient(1L,"Andres","Ramirez","38416140",date, "Cordoba");
+        patientService.updatePatient(patient);
         assertEquals("Ramirez", patientService.searchPatientByNationalId("38416140").getLastName());
     }
 
     @Test
-    void deletePatientById() {
+    void deletePatientById() throws BadRequestException, ResourceNotFoundException {
         if(patientService.searchAllPatients().size() == 0){
             createInstance();
         }
         patientService.deletePatientById(1L);
-        assertNull(patientService.searchPatientById(1L));
+        assertThrows(ResourceNotFoundException.class, () -> patientService.searchPatientById(1L));
     }
 
     @Test
-    void searchAllPatients() {
+    void searchAllPatients() throws BadRequestException {
 
         if(patientService.searchAllPatients().size() == 0){
             createInstance();

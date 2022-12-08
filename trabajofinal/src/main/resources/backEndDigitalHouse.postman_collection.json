@@ -1,0 +1,694 @@
+{
+	"info": {
+		"_postman_id": "e6aeb3db-4811-472f-b82a-670d4585ec82",
+		"name": "backEndDigitalHouse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21692753"
+	},
+	"item": [
+		{
+			"name": "Patients",
+			"item": [
+				{
+					"name": "savePatient(ADMIN)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQWRtaW5AYWRtaW4uY29tIiwiZXhwIjoxNjcwNTEzNzMxLCJpYXQiOjE2NzA1MTMxMzF9.krdY80xdSvxZAyMgCY8Kp_f0d4k_GbIA_qR06K5BQes",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Ruben\",\n    \"lastName\": \"Nazario\",\n    \"nationalId\": \"38416140\",\n    \"email\": \"ruben@nazario.com\",\n    \"registrationDate\": \"2022-11-25\",\n    \"address\": \"Avenida Siempre Viva \"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}patients",
+							"host": [
+								"{{url}}patients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPatientById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyVGVzdEB0ZXN0LmNvbSIsImV4cCI6MTY3MDUxMzk3NywiaWF0IjoxNjcwNTEzMzc3fQ.YbFz4BnLFBt_cgEO44varg3qEl4Hc0B8LABariO_YN4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}patients/id/1",
+							"host": [
+								"{{url}}patients"
+							],
+							"path": [
+								"id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPatientByNationalId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyVGVzdEB0ZXN0LmNvbSIsImV4cCI6MTY3MDUxMzk3NywiaWF0IjoxNjcwNTEzMzc3fQ.YbFz4BnLFBt_cgEO44varg3qEl4Hc0B8LABariO_YN4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}patients/nationalId/38416140",
+							"host": [
+								"{{url}}patients"
+							],
+							"path": [
+								"nationalId",
+								"38416140"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllPatients",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyVGVzdEB0ZXN0LmNvbSIsImV4cCI6MTY3MDUxMzk3NywiaWF0IjoxNjcwNTEzMzc3fQ.YbFz4BnLFBt_cgEO44varg3qEl4Hc0B8LABariO_YN4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}patients",
+							"host": [
+								"{{url}}patients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePatient(ADMIN)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyVGVzdEB0ZXN0LmNvbSIsImV4cCI6MTY3MDQyNDM1NSwiaWF0IjoxNjcwNDIzNzU1fQ.ASczkHuHfnKQjw00iRAH6eF9cXI2dp-mzJ5OkKHspAw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"1\",\n    \"name\": \"Pablo\",\n    \"nationalId\": \"43888888\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}patients/update",
+							"host": [
+								"{{url}}patients"
+							],
+							"path": [
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePatientById(ADMIN)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQWRtaW5AYWRtaW4uY29tIiwiZXhwIjoxNjcwNTExNzczLCJpYXQiOjE2NzA1MTExNzN9.Kr8V-wDAek8KeKW-JMFr7plflalPY45PoI6hq2_4ptI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}patients/delete/1",
+							"host": [
+								"{{url}}patients"
+							],
+							"path": [
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dentists",
+			"item": [
+				{
+					"name": "saveDentist(ADMIN)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQWRtaW5AYWRtaW4uY29tIiwiZXhwIjoxNjcwNTEyMjgwLCJpYXQiOjE2NzA1MTE2ODB9.KUtjaE-onGntMGBmiJ3xOLGtFaj33qQQGCqBGPY-X-k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Rodrigo\",\n    \"lastName\": \"Lucero\",\n    \"licenseNumber\": \"1231447\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}dentists",
+							"host": [
+								"{{url}}dentists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDentistById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyVGVzdEB0ZXN0LmNvbSIsImV4cCI6MTY3MDQyNzYzNiwiaWF0IjoxNjcwNDI3MDM2fQ.8pTCzOJjdLeI21Qu5eSlbbYMn9cDFQCKVKa6g7e8G-4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}dentists/id/1",
+							"host": [
+								"{{url}}dentists"
+							],
+							"path": [
+								"id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDentistByLicenseNumber",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyVGVzdEB0ZXN0LmNvbSIsImV4cCI6MTY3MDQyNzYzNiwiaWF0IjoxNjcwNDI3MDM2fQ.8pTCzOJjdLeI21Qu5eSlbbYMn9cDFQCKVKa6g7e8G-4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}dentists/licenseNumber/1231447",
+							"host": [
+								"{{url}}dentists"
+							],
+							"path": [
+								"licenseNumber",
+								"1231447"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllDentists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyVGVzdEB0ZXN0LmNvbSIsImV4cCI6MTY3MDQyNzYzNiwiaWF0IjoxNjcwNDI3MDM2fQ.8pTCzOJjdLeI21Qu5eSlbbYMn9cDFQCKVKa6g7e8G-4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}dentists",
+							"host": [
+								"{{url}}dentists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateDentist(ADMIN)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyVGVzdEB0ZXN0LmNvbSIsImV4cCI6MTY3MDQyNzYzNiwiaWF0IjoxNjcwNDI3MDM2fQ.8pTCzOJjdLeI21Qu5eSlbbYMn9cDFQCKVKa6g7e8G-4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"name\": \"Ramiro\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}dentists/update",
+							"host": [
+								"{{url}}dentists"
+							],
+							"path": [
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteDentistById(ADMIN)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyVGVzdEB0ZXN0LmNvbSIsImV4cCI6MTY3MDQyNzYzNiwiaWF0IjoxNjcwNDI3MDM2fQ.8pTCzOJjdLeI21Qu5eSlbbYMn9cDFQCKVKa6g7e8G-4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}dentists/delete/1",
+							"host": [
+								"{{url}}dentists"
+							],
+							"path": [
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Appointments",
+			"item": [
+				{
+					"name": "saveAppointment(ADMIN)",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"let time = postman.setEnvironmentVariable('isoTime',(new Date()).toISOString());"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQWRtaW5AYWRtaW4uY29tIiwiZXhwIjoxNjcwNTEyMjgwLCJpYXQiOjE2NzA1MTE2ODB9.KUtjaE-onGntMGBmiJ3xOLGtFaj33qQQGCqBGPY-X-k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"date\": \"2022-11-25\",\n    \"time\": \"10:15:30\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}appointments?dentistLicense=1231447&patientNationalId=38416140",
+							"host": [
+								"{{url}}appointments"
+							],
+							"query": [
+								{
+									"key": "dentistLicense",
+									"value": "1231447"
+								},
+								{
+									"key": "patientNationalId",
+									"value": "38416140"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllAppointments",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyVGVzdEB0ZXN0LmNvbSIsImV4cCI6MTY3MDQ0NDM4NywiaWF0IjoxNjcwNDQzNzg3fQ.joVBEq-Ik50gHzeLGU712TgRfJFE2EEMB4AYHE0Z7GQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}appointments",
+							"host": [
+								"{{url}}appointments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAppointmentById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyVGVzdEB0ZXN0LmNvbSIsImV4cCI6MTY3MDQ0NDM4NywiaWF0IjoxNjcwNDQzNzg3fQ.joVBEq-Ik50gHzeLGU712TgRfJFE2EEMB4AYHE0Z7GQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}appointments/id/3",
+							"host": [
+								"{{url}}appointments"
+							],
+							"path": [
+								"id",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAppointmentsByDentistLicense",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyVGVzdEB0ZXN0LmNvbSIsImV4cCI6MTY3MDQ0NDM4NywiaWF0IjoxNjcwNDQzNzg3fQ.joVBEq-Ik50gHzeLGU712TgRfJFE2EEMB4AYHE0Z7GQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}appointments/licenseNumber/1231447",
+							"host": [
+								"{{url}}appointments"
+							],
+							"path": [
+								"licenseNumber",
+								"1231447"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAppointmentsByPatientNationalId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyVGVzdEB0ZXN0LmNvbSIsImV4cCI6MTY3MDQ0NDM4NywiaWF0IjoxNjcwNDQzNzg3fQ.joVBEq-Ik50gHzeLGU712TgRfJFE2EEMB4AYHE0Z7GQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}appointments/nationalId/38416140",
+							"host": [
+								"{{url}}appointments"
+							],
+							"path": [
+								"nationalId",
+								"38416140"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAppointment(ADMIN)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyQWRtaW5AYWRtaW4uY29tIiwiZXhwIjoxNjcwNTEyMjgwLCJpYXQiOjE2NzA1MTE2ODB9.KUtjaE-onGntMGBmiJ3xOLGtFaj33qQQGCqBGPY-X-k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"time\": \"13:30\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}appointments/update",
+							"host": [
+								"{{url}}appointments"
+							],
+							"path": [
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAppointment(ADMIN)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyVGVzdEB0ZXN0LmNvbSIsImV4cCI6MTY3MDQ0NDM4NywiaWF0IjoxNjcwNDQzNzg3fQ.joVBEq-Ik50gHzeLGU712TgRfJFE2EEMB4AYHE0Z7GQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}appointments/delete/3",
+							"host": [
+								"{{url}}appointments"
+							],
+							"path": [
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authenticate",
+			"item": [
+				{
+					"name": "getJWTUser",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"userTest@test.com\",\n    \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}auth",
+							"host": [
+								"{{url}}auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getJWTAdmin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"userAdmin@admin.com\",\n    \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}auth",
+							"host": [
+								"{{url}}auth"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:8080/",
+			"type": "string"
+		}
+	]
+}

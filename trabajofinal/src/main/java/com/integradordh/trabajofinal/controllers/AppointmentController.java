@@ -1,15 +1,22 @@
 package com.integradordh.trabajofinal.controllers;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.integradordh.trabajofinal.exceptions.BadRequestException;
+import com.integradordh.trabajofinal.exceptions.ResourceNotFoundException;
+import com.integradordh.trabajofinal.models.Appointment;
+import com.integradordh.trabajofinal.models.Dentist;
+import com.integradordh.trabajofinal.models.Patient;
 import com.integradordh.trabajofinal.models.dto.AppointmentDTO;
-import com.integradordh.trabajofinal.models.services.IAppointmentService;
-import com.integradordh.trabajofinal.models.services.IDentistService;
-import com.integradordh.trabajofinal.models.services.IPatientService;
+import com.integradordh.trabajofinal.services.IAppointmentService;
+import com.integradordh.trabajofinal.services.IDentistService;
+import com.integradordh.trabajofinal.services.IPatientService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 
-import java.time.LocalTime;
+
 import java.util.Set;
 
 @RestController
@@ -25,27 +32,75 @@ public class AppointmentController {
     @Autowired
     IDentistService dentistService;
 
+    @Autowired
+    ObjectMapper objectMapper;
+
     @PostMapping
-    public ResponseEntity<?> saveAppointment(@RequestParam(name = "dentistLicense") String dentistLicense, @RequestParam(name = "patientNationalId") String patientNationalId, @RequestParam String date, @RequestParam LocalTime time)
-    {
-        AppointmentDTO appointmentDTO = new AppointmentDTO(dentistService.searchDentistByLicenseNumber(dentistLicense), patientService.searchPatientByNationalId(patientNationalId), date, time);
-        appointmentService.saveAppointment(appointmentDTO);
-        return ResponseEntity.ok().body("Appointment created succesfully " + appointmentDTO.toString());
+    public ResponseEntity<?> saveAppointment(@RequestParam(name = "dentistLicense") String dentistLicense, @RequestParam(name = "patientNationalId") String patientNationalId, @RequestBody AppointmentDTO appointmentDTO) throws ResourceNotFoundException, BadRequestException {
+        ResponseEntity<?> response = null;
+
+        try {
+            Appointment appointment = new Appointment(objectMapper.convertValue(dentistService.searchDentistDTOCompleteByLicenseNumber(dentistLicense), Dentist.class), objectMapper.convertValue(patientService.searchPatientCompleteByNationalId(patientNationalId), Patient.class), appointmentDTO.getDate(), appointmentDTO.getTime());
+            appointmentService.saveAppointment(appointment);
+            response = ResponseEntity.status(HttpStatus.CREATED).body("Appointment created successfully " + appointment.toString());
+
+        }catch (BadRequestException e){
+            response = ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Appointment couldn't be created.");
+            e.printStackTrace();
+
+        }
+        return response;
     }
 
     @GetMapping("/id/{id}")
-    public AppointmentDTO searchAppointmentById(@PathVariable Long id){
-        return appointmentService.searchAppointmentById(id);
+    public ResponseEntity<?> searchAppointmentById(@PathVariable Long id) throws ResourceNotFoundException {
+        ResponseEntity<?> response = null;
+
+        try {
+
+            AppointmentDTO appointmentDTO = appointmentService.searchAppointmentById(id);
+            response = ResponseEntity.status(HttpStatus.FOUND).body(appointmentDTO);
+
+        }catch (ResourceNotFoundException e){
+            response = ResponseEntity.status(HttpStatus.NOT_FOUND).body("Appointment not found.");
+            e.printStackTrace();
+
+        }
+        return response;
     }
 
     @GetMapping("/licenseNumber/{licenseNumber}")
-    public Set<AppointmentDTO> searchAppointmentsByDentistLicense(@PathVariable String licenseNumber){
-        return appointmentService.searchAppointmentsByDentistLicense(licenseNumber);
+    public ResponseEntity<?> searchAppointmentsByDentistLicense(@PathVariable String licenseNumber) throws ResourceNotFoundException {
+        ResponseEntity<?> response = null;
+
+        try {
+
+            Set<AppointmentDTO> appointmentDTOSet = appointmentService.searchAppointmentsByDentistLicense(licenseNumber);
+            response = ResponseEntity.status(HttpStatus.FOUND).body(appointmentDTOSet);
+
+        }catch (ResourceNotFoundException e){
+            response = ResponseEntity.status(HttpStatus.NOT_FOUND).body("Appointments not found.");
+            e.printStackTrace();
+
+        }
+        return response;
     }
 
     @GetMapping("/nationalId/{nationalId}")
-    public Set<AppointmentDTO> searchAppointmentsByPatientNationalId(@PathVariable String nationalId){
-        return appointmentService.searchAppointmentsByPatientNationalId(nationalId);
+    public ResponseEntity<?> searchAppointmentsByPatientNationalId(@PathVariable String nationalId) throws ResourceNotFoundException {
+        ResponseEntity<?> response = null;
+
+        try {
+
+            Set<AppointmentDTO> appointmentDTOSet = appointmentService.searchAppointmentsByPatientNationalId(nationalId);
+            response = ResponseEntity.status(HttpStatus.FOUND).body(appointmentDTOSet);
+
+        }catch (ResourceNotFoundException e){
+            response = ResponseEntity.status(HttpStatus.NOT_FOUND).body("Appointments not found.");
+            e.printStackTrace();
+
+        }
+        return response;
     }
 
     @GetMapping
@@ -54,15 +109,34 @@ public class AppointmentController {
     }
 
     @PatchMapping("/update")
-    public ResponseEntity<?> updateAppointment(@RequestBody AppointmentDTO appointmentDTO){
-        appointmentService.updateAppointment(appointmentDTO);
-        return ResponseEntity.ok().body("Appointment updated succesfully" + appointmentService.searchAppointmentById(appointmentDTO.getId()).toString());
+    public ResponseEntity<?> updateAppointment(@RequestBody Appointment appointment) throws ResourceNotFoundException, BadRequestException {
+        ResponseEntity<?> response = null;
+        try {
+            appointmentService.updateAppointment(appointment);
+            response = ResponseEntity.ok().body("Appointment updated successfully" + appointmentService.searchAppointmentById(appointment.getId()).toString());
+
+
+        }catch (BadRequestException e){
+            response = ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Appointment couldn't be updated.");
+            e.printStackTrace();
+        }
+        return response;
     }
 
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<?> deleteAppointment(@PathVariable("id") Long id){
-        AppointmentDTO appointmentInfo = appointmentService.searchAppointmentById(id);
-        appointmentService.deleteAppointment(id);
-        return ResponseEntity.ok().body("Appointment deleted succesfully " + appointmentInfo.toString());
+    public ResponseEntity<?> deleteAppointment(@PathVariable("id") Long id) throws ResourceNotFoundException {
+        ResponseEntity<?> response = null;
+
+        try {
+            AppointmentDTO appointmentInfo = appointmentService.searchAppointmentById(id);
+            appointmentService.deleteAppointment(id);
+            response = ResponseEntity.ok().body("Appointment deleted successfully " + appointmentInfo.toString());
+
+        }catch (ResourceNotFoundException e){
+            response = ResponseEntity.status(HttpStatus.NOT_FOUND).body("Appointment couldn't be deleted.");
+            e.printStackTrace();
+
+        }
+        return response;
     }
 }

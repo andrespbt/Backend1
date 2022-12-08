@@ -1,11 +1,16 @@
 package com.integradordh.trabajofinal.services.impl;
 
-import com.integradordh.trabajofinal.models.dto.AppointmentDTO;
-import com.integradordh.trabajofinal.models.dto.DentistDTO;
-import com.integradordh.trabajofinal.models.dto.PatientDTO;
-import com.integradordh.trabajofinal.models.services.IAppointmentService;
-import com.integradordh.trabajofinal.models.services.IDentistService;
-import com.integradordh.trabajofinal.models.services.IPatientService;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.integradordh.trabajofinal.exceptions.BadRequestException;
+import com.integradordh.trabajofinal.exceptions.ResourceNotFoundException;
+import com.integradordh.trabajofinal.models.Appointment;
+import com.integradordh.trabajofinal.models.Dentist;
+import com.integradordh.trabajofinal.models.Patient;
+import com.integradordh.trabajofinal.models.dto.AppointmentDTOComplete;
+import com.integradordh.trabajofinal.models.dto.DentistDTOComplete;
+import com.integradordh.trabajofinal.services.IAppointmentService;
+import com.integradordh.trabajofinal.services.IDentistService;
+import com.integradordh.trabajofinal.services.IPatientService;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -13,10 +18,8 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.Calendar;
-import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -33,52 +36,67 @@ class AppointmentServiceImplTest {
     @Autowired
     IPatientService patientService;
 
-    public void createInstance(){
+    @Autowired
+    ObjectMapper objectMapper;
+
+    public void createDentistAndPatient() throws BadRequestException, ResourceNotFoundException {
+        Dentist dentist = new Dentist("Andres","Poblete","14123");
+        Dentist dentist1 = new Dentist("Pablo","Perez","44213");
+        Dentist dentist2 = new Dentist("Marcos","Acuña","11231");
+        dentistService.saveDentist(dentist);
+        dentistService.saveDentist(dentist1);
+        dentistService.saveDentist(dentist2);
+
+        LocalDate date1 = LocalDate.of(LocalDate.now().getYear(),LocalDate.now().getMonthValue(), LocalDate.now().getDayOfMonth());
+        Patient patient = new Patient("Andres","Poblete","38416140", date1, "Mendoza");
+        Patient patient1 = new Patient("Pablo","Guevara","11453231", date1, "San Juan");
+        Patient patient2 = new Patient("Marcos","Mitre","5432123", date1, "Entre Rios");
+        patientService.savePatient(patient);
+        patientService.savePatient(patient1);
+        patientService.savePatient(patient2);
+
+
+    }
+
+    public void createInstance() throws BadRequestException, ResourceNotFoundException {
         LocalTime time = LocalTime.now();
-        DentistDTO dentistDTO = new DentistDTO("Ruben","Lazzaro","14123");
-        DentistDTO dentistDTO1 = new DentistDTO("Mario","Jaurez","123456");
-        DentistDTO dentistDTO2 = new DentistDTO("Pablo","Martinez","23456");
-        dentistService.saveDentist(dentistDTO);
-        dentistService.saveDentist(dentistDTO1);
-        dentistService.saveDentist(dentistDTO2);
+        LocalDate date2 = LocalDate.of(2022,12, 15);
+        Dentist dentist1 = objectMapper.convertValue(dentistService.searchDentistDTOCompleteByLicenseNumber("14123"), Dentist.class);
+        Dentist dentist2 = objectMapper.convertValue(dentistService.searchDentistDTOCompleteByLicenseNumber("44213"), Dentist.class);
+        Dentist dentist3 = objectMapper.convertValue(dentistService.searchDentistDTOCompleteByLicenseNumber("11231"), Dentist.class);
 
-        Date date = new Date(122, Calendar.NOVEMBER,25);
-        SimpleDateFormat DateFor = new SimpleDateFormat("dd/MM/yyyy");
-        String dateString = DateFor.format(date);
-        PatientDTO patientDTO = new PatientDTO("Andres","Poblete","38416140",date);
-        PatientDTO patientDTO1 = new PatientDTO("Pablo","Guevara","11453231",date);
-        PatientDTO patientDTO2 = new PatientDTO("Marcos","Mitre","5432123",date);
-        patientService.savePatient(patientDTO);
-        patientService.savePatient(patientDTO1);
-        patientService.savePatient(patientDTO2);
+        Patient patient1 = objectMapper.convertValue(patientService.searchPatientCompleteByNationalId("38416140"),Patient.class);
+        Patient patient2 = objectMapper.convertValue(patientService.searchPatientCompleteByNationalId("11453231"), Patient.class);
+        Patient patient3 = objectMapper.convertValue(patientService.searchPatientCompleteByNationalId("5432123"), Patient.class);
 
-        AppointmentDTO appointmentDTO = new AppointmentDTO(dentistService.searchDentistByLicenseNumber("14123"), patientService.searchPatientByNationalId("38416140"), dateString, time);
-        AppointmentDTO appointmentDTO1 = new AppointmentDTO(dentistService.searchDentistByLicenseNumber("14123"), patientService.searchPatientByNationalId("11453231"), dateString, time);
-        AppointmentDTO appointmentDTO2 = new AppointmentDTO(dentistService.searchDentistByLicenseNumber("14123"), patientService.searchPatientByNationalId("5432123"), dateString, time);
-
-        appointmentService.saveAppointment(appointmentDTO);
-        appointmentService.saveAppointment(appointmentDTO1);
-        appointmentService.saveAppointment(appointmentDTO2);
+        Appointment appointment = new Appointment(dentist1, patient1, date2, time);
+        Appointment appointment1 = new Appointment(dentist2, patient2, date2, time);
+        Appointment appointment2 = new Appointment(dentist3, patient3, date2, time);
+        appointmentService.saveAppointment(appointment);
+        appointmentService.saveAppointment(appointment1);
+        appointmentService.saveAppointment(appointment2);
 
     }
 
     @Test
     @Order(1)
-    void saveAppointment() {
+    void saveAppointment() throws BadRequestException, ResourceNotFoundException {
 
-        if(appointmentService.searchAppointmentById(1L) == null){
+        if(appointmentService.searchAllAppointments().size() == 0){
+            createDentistAndPatient();
             createInstance();
         }
 
-        assertEquals("Lazzaro",appointmentService.searchAppointmentById(1L).getDentist().getLastName());
+        assertEquals("Poblete",appointmentService.searchAppointmentById(1L).getDentist().getLastName());
 
     }
 
     @Test
     @Order(3)
-    void searchAppointmentById() {
+    void searchAppointmentById() throws BadRequestException, ResourceNotFoundException {
 
-        if(appointmentService.searchAppointmentsByDentistLicense("14123").size() == 0){
+        if(appointmentService.searchAllAppointments().size() == 0){
+            createDentistAndPatient();
             createInstance();
         }
         assertNotNull(appointmentService.searchAppointmentById(1L));
@@ -86,57 +104,63 @@ class AppointmentServiceImplTest {
 
     @Test
     @Order(4)
-    void searchAppointmentsByDentistLicense() {
-        if(appointmentService.searchAllAppointments().size() < 3){
+    void searchAppointmentsByDentistLicense() throws BadRequestException, ResourceNotFoundException {
+        if(appointmentService.searchAllAppointments().size() == 0){
+            createDentistAndPatient();
             createInstance();
         }
-        assertTrue(appointmentService.searchAppointmentsByDentistLicense("14123").size() >= 3);
+        assertTrue(appointmentService.searchAppointmentsByDentistLicense("14123").size() > 0);
 
     }
 
     @Test
     @Order(5)
-    void searchAppointmentsByPatientNationalId() {
+    void searchAppointmentsByPatientNationalId() throws BadRequestException, ResourceNotFoundException {
         if(appointmentService.searchAllAppointments().size() == 0){
+            createDentistAndPatient();
             createInstance();
         }
-        assertTrue(appointmentService.searchAppointmentsByPatientNationalId("38416140").size() >= 1);
+        assertTrue(appointmentService.searchAppointmentsByPatientNationalId("38416140").size() > 0);
 
     }
 
     @Test
     @Order(6)
-    void updateAppointment() {
+    void updateAppointment() throws BadRequestException, ResourceNotFoundException {
+
 
         if(appointmentService.searchAllAppointments().size() == 0){
+            createDentistAndPatient();
             createInstance();
         }
-        AppointmentDTO appointmentDTOUpdated = appointmentService.searchAppointmentById(1L);
-        DentistDTO dentistDTO1 = dentistService.searchDentistByLicenseNumber("123456");
-        appointmentDTOUpdated.setDentist(dentistDTO1);
-        appointmentDTOUpdated.setId(1L);
-        appointmentService.updateAppointment(appointmentDTOUpdated);
+        AppointmentDTOComplete appointmentDTOToUpdate = appointmentService.searchAppointmentDTOCompleteById(1L);
+        DentistDTOComplete dentistDTOComplete = dentistService.searchDentistDTOCompleteByLicenseNumber("44213");
+        appointmentDTOToUpdate.setDentist(dentistDTOComplete);
+        Appointment appointmentUpdated = objectMapper.convertValue(appointmentDTOToUpdate, Appointment.class);
+        appointmentService.updateAppointment(appointmentUpdated);
 
-        assertEquals("123456", appointmentService.searchAppointmentById(1L).getDentist().getLicenseNumber());
+        assertEquals("Perez", appointmentService.searchAppointmentById(1L).getDentist().getLastName());
     }
 
     @Test
     @Order(7)
-    void deleteAppointment() {
+    void deleteAppointment() throws BadRequestException, ResourceNotFoundException {
         if(appointmentService.searchAllAppointments().size() == 0){
+            createDentistAndPatient();
             createInstance();
         }
         appointmentService.deleteAppointment(1L);
 
-        assertNull(appointmentService.searchAppointmentById(1L));
+        assertThrows(ResourceNotFoundException.class, () -> appointmentService.searchAppointmentById(1L));
 
     }
 
     @Test
     @Order(2)
-    void searchAllAppointments() {
+    void searchAllAppointments() throws BadRequestException, ResourceNotFoundException {
 
        if(appointmentService.searchAllAppointments().size() == 0){
+           createDentistAndPatient();
            createInstance();
        }
 

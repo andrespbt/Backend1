@@ -1,511 +1,673 @@
-[INFO ] 2022-12-01 16:11:33.578 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 24491 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-01 16:11:33.598 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-01 16:11:33.599 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-01 16:11:36.213 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.843 seconds (process running for 3.652)
-[INFO ] 2022-12-01 16:11:40.627 [http-nio-8080-exec-1] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-01 16:16:46.872 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 24756 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-01 16:16:46.877 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-01 16:16:46.878 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-01 16:16:49.377 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.735 seconds (process running for 3.4)
-[INFO ] 2022-12-01 16:16:56.019 [http-nio-8080-exec-2] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-01 16:19:02.180 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 24859 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-01 16:19:02.184 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-01 16:19:02.188 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-01 16:19:04.754 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.764 seconds (process running for 3.487)
-[INFO ] 2022-12-01 16:19:10.302 [http-nio-8080-exec-1] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[ERROR] 2022-12-01 16:19:13.017 [http-nio-8080-exec-3] UserServiceImpl - User with id: 2 doesn't exists
-[ERROR] 2022-12-01 16:23:54.047 [http-nio-8080-exec-5] UserServiceImpl - User with id: 2 doesn't exists
-[INFO ] 2022-12-01 18:23:05.345 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 25378 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-01 18:23:05.351 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-01 18:23:05.351 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-01 18:23:07.912 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.743 seconds (process running for 3.444)
-[INFO ] 2022-12-01 18:23:15.162 [http-nio-8080-exec-2] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[ERROR] 2022-12-01 18:23:17.287 [http-nio-8080-exec-3] UserServiceImpl - User with id: 2 doesn't exists
-[INFO ] 2022-12-04 15:10:39.785 [main] AppointmentServiceImplTest - Starting AppointmentServiceImplTest using Java 19 with PID 45105 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 15:10:39.788 [main] AppointmentServiceImplTest - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 15:10:39.788 [main] AppointmentServiceImplTest - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 15:10:42.265 [main] AppointmentServiceImplTest - Started AppointmentServiceImplTest in 2.608 seconds (process running for 3.696)
-[INFO ] 2022-12-04 16:58:23.185 [main] AppointmentServiceImplTest - Starting AppointmentServiceImplTest using Java 19 with PID 47083 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 16:58:23.188 [main] AppointmentServiceImplTest - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 16:58:23.188 [main] AppointmentServiceImplTest - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 16:58:26.475 [main] AppointmentServiceImplTest - Started AppointmentServiceImplTest in 3.43 seconds (process running for 4.909)
-[INFO ] 2022-12-04 16:58:49.812 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 47113 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 16:58:49.819 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 16:58:49.820 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 16:58:52.391 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.781 seconds (process running for 3.527)
-[INFO ] 2022-12-04 17:35:04.787 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48069 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 17:35:04.805 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 17:35:04.806 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 17:35:07.245 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.656 seconds (process running for 3.419)
-[INFO ] 2022-12-04 17:35:58.604 [http-nio-8080-exec-2] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[ERROR] 2022-12-04 17:36:31.336 [http-nio-8080-exec-3] UserServiceImpl - User with id: 2 doesn't exists
-[INFO ] 2022-12-04 17:37:31.875 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48197 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 17:37:31.881 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 17:37:31.881 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 17:37:34.231 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.54 seconds (process running for 3.447)
-[ERROR] 2022-12-04 17:37:38.590 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
-[INFO ] 2022-12-04 17:44:14.508 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48377 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 17:44:14.512 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 17:44:14.513 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 17:44:16.823 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.502 seconds (process running for 3.186)
-[ERROR] 2022-12-04 17:44:21.760 [http-nio-8080-exec-1] UserServiceImpl - User with id: 2 doesn't exists
-[ERROR] 2022-12-04 17:44:26.707 [http-nio-8080-exec-4] UserServiceImpl - User with id: 2 doesn't exists
-[ERROR] 2022-12-04 17:44:30.390 [http-nio-8080-exec-6] UserServiceImpl - User with id: 1 doesn't exists
-[ERROR] 2022-12-04 17:45:52.161 [http-nio-8080-exec-8] UserServiceImpl - User with id: 2 doesn't exists
-[INFO ] 2022-12-04 17:47:53.592 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48428 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 17:47:53.598 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 17:47:53.600 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 17:47:56.030 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.609 seconds (process running for 3.383)
-[ERROR] 2022-12-04 17:47:59.575 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
-[ERROR] 2022-12-04 17:48:00.752 [http-nio-8080-exec-4] UserServiceImpl - User with id: 2 doesn't exists
-[INFO ] 2022-12-04 17:52:19.457 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48582 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 17:52:19.463 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 17:52:19.464 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 17:52:21.828 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.557 seconds (process running for 3.339)
-[ERROR] 2022-12-04 17:52:25.986 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
-[ERROR] 2022-12-04 17:52:29.225 [http-nio-8080-exec-3] UserServiceImpl - User with id: 2 doesn't exists
-[INFO ] 2022-12-04 17:53:16.207 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48598 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 17:53:16.212 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 17:53:16.212 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 17:53:18.529 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.55 seconds (process running for 3.1)
-[ERROR] 2022-12-04 17:53:21.662 [http-nio-8080-exec-1] UserServiceImpl - User with id: 2 doesn't exists
-[INFO ] 2022-12-04 17:53:45.273 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48608 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 17:53:45.279 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 17:53:45.280 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 17:53:47.596 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.516 seconds (process running for 3.058)
-[ERROR] 2022-12-04 17:53:51.339 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
-[INFO ] 2022-12-04 17:54:50.055 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48631 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 17:54:50.062 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 17:54:50.063 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 17:54:52.376 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.53 seconds (process running for 3.253)
-[ERROR] 2022-12-04 17:54:55.685 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
-[INFO ] 2022-12-04 17:55:52.721 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48676 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 17:55:52.726 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 17:55:52.730 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 17:55:55.107 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.591 seconds (process running for 3.381)
-[ERROR] 2022-12-04 17:55:57.941 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
-[INFO ] 2022-12-04 17:59:47.559 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 48841 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 17:59:47.563 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 17:59:47.564 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 17:59:49.876 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.503 seconds (process running for 3.264)
-[ERROR] 2022-12-04 17:59:53.351 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
-[INFO ] 2022-12-04 18:10:18.331 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 49062 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 18:10:18.335 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 18:10:18.340 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 18:10:20.608 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.466 seconds (process running for 3.278)
-[ERROR] 2022-12-04 18:10:24.327 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
-[INFO ] 2022-12-04 18:11:21.696 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 49075 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 18:11:21.702 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 18:11:21.703 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 18:11:23.946 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.459 seconds (process running for 3.041)
-[ERROR] 2022-12-04 18:11:27.018 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
-[INFO ] 2022-12-04 18:11:37.753 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 49080 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 18:11:37.758 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 18:11:37.763 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 18:11:40.024 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.447 seconds (process running for 3.031)
-[ERROR] 2022-12-04 18:11:43.278 [http-nio-8080-exec-2] UserServiceImpl - User with id: 2 doesn't exists
-[INFO ] 2022-12-04 18:26:33.469 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 49447 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 18:26:33.477 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 18:26:33.478 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 18:26:35.809 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.529 seconds (process running for 3.241)
-[ERROR] 2022-12-04 18:26:39.726 [http-nio-8080-exec-1] UserServiceImpl - User with id: 2 doesn't exists
-[WARN ] 2022-12-04 18:26:59.040 [http-nio-8080-exec-3] UserServiceImpl - Bad request. User needs name and lastname
-[INFO ] 2022-12-04 18:27:09.746 [http-nio-8080-exec-5] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[ERROR] 2022-12-04 18:27:31.004 [http-nio-8080-exec-6] UserServiceImpl - User with id: 2 doesn't exists
-[INFO ] 2022-12-04 18:27:33.860 [http-nio-8080-exec-7] UserServiceImpl - User found 
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-04 18:27:33.862 [http-nio-8080-exec-7] UserServiceImpl - User found 
-Name='Martin'
-LastName='Poblete'
-[ERROR] 2022-12-04 18:29:03.325 [http-nio-8080-exec-10] UserServiceImpl - User with id: 2 doesn't exists
-[INFO ] 2022-12-04 18:30:33.907 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 49481 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 18:30:33.913 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 18:30:33.922 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 18:30:36.187 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.454 seconds (process running for 3.154)
-[ERROR] 2022-12-04 18:30:40.694 [http-nio-8080-exec-1] UserServiceImpl - User with id: 2 doesn't exists
-[ERROR] 2022-12-04 18:30:45.080 [http-nio-8080-exec-3] UserServiceImpl - User with id: 1 doesn't exists
-[INFO ] 2022-12-04 18:30:47.566 [http-nio-8080-exec-4] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-04 18:30:49.872 [http-nio-8080-exec-5] UserServiceImpl - User found 
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-04 18:49:35.740 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 49745 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 18:49:35.745 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 18:49:35.751 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 18:49:38.097 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.574 seconds (process running for 3.25)
-[ERROR] 2022-12-04 18:49:45.774 [http-nio-8080-exec-2] UserServiceImpl - User with id: 1 doesn't exists
-[INFO ] 2022-12-04 18:50:16.837 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 49757 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 18:50:16.842 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 18:50:16.843 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 18:50:19.173 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.518 seconds (process running for 3.22)
-[ERROR] 2022-12-04 18:50:22.245 [http-nio-8080-exec-2] UserServiceImpl - User with id: 1 doesn't exists
-[ERROR] 2022-12-04 18:50:40.973 [http-nio-8080-exec-3] UserServiceImpl - User with id: 1 doesn't exists
-[ERROR] 2022-12-04 18:50:49.425 [http-nio-8080-exec-4] UserServiceImpl - User with id: 1 doesn't exists
-[INFO ] 2022-12-04 18:51:32.891 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 49769 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 18:51:32.896 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 18:51:32.897 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 18:51:35.261 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.553 seconds (process running for 3.082)
-[ERROR] 2022-12-04 18:51:38.809 [http-nio-8080-exec-2] UserServiceImpl - User with id: 1 doesn't exists
-[ERROR] 2022-12-04 19:08:46.905 [http-nio-8080-exec-5] UserServiceImpl - User with id: 1 doesn't exists
-[INFO ] 2022-12-04 19:08:50.467 [http-nio-8080-exec-6] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-04 19:08:52.423 [http-nio-8080-exec-7] UserServiceImpl - User found 
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-04 19:09:02.021 [http-nio-8080-exec-8] UserServiceImpl - User found 
-Name='Francisco'
-LastName='Poblete'
-[INFO ] 2022-12-04 19:09:12.434 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 50133 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-04 19:09:12.439 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-04 19:09:12.439 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-04 19:09:14.857 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.61 seconds (process running for 3.38)
-[INFO ] 2022-12-04 19:09:18.530 [http-nio-8080-exec-2] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-04 19:09:20.664 [http-nio-8080-exec-3] UserServiceImpl - User found 
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-04 19:09:29.105 [http-nio-8080-exec-4] UserServiceImpl - User found 
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-05 14:02:46.410 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 1865 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-05 14:02:46.419 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-05 14:02:46.420 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-05 14:02:48.916 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.717 seconds (process running for 3.724)
-[ERROR] 2022-12-05 14:02:53.600 [http-nio-8080-exec-2] UserServiceImpl - There aren't any users.
-[INFO ] 2022-12-05 14:02:59.920 [http-nio-8080-exec-4] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-05 14:03:02.823 [http-nio-8080-exec-5] UserServiceImpl - Showing all users.
-[INFO ] 2022-12-05 14:03:28.187 [http-nio-8080-exec-6] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-05 14:03:29.418 [http-nio-8080-exec-7] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-05 14:03:32.805 [http-nio-8080-exec-8] UserServiceImpl - Showing all users.
-[INFO ] 2022-12-05 14:07:11.993 [http-nio-8080-exec-1] UserServiceImpl - User found 
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-05 14:07:11.995 [http-nio-8080-exec-1] UserServiceImpl - User deleted Optional[com.integradordh.trabajofinal.models.User@38f2e02f]
-[ERROR] 2022-12-05 14:07:16.144 [http-nio-8080-exec-2] UserServiceImpl - User with id: 3 doesn't exists.
-[INFO ] 2022-12-05 14:07:22.103 [http-nio-8080-exec-4] UserServiceImpl - User found 
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-05 14:07:22.110 [http-nio-8080-exec-4] UserServiceImpl - User deleted Optional[com.integradordh.trabajofinal.models.User@536b8ab2]
-[INFO ] 2022-12-05 14:16:54.978 [http-nio-8080-exec-8] UserServiceImpl - User found 
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-05 14:16:54.980 [http-nio-8080-exec-8] UserServiceImpl - User deleted Optional[com.integradordh.trabajofinal.models.User@55eb6bdf]
-[ERROR] 2022-12-05 14:16:59.982 [http-nio-8080-exec-9] UserServiceImpl - User with id 1 doesn't exists.
-[INFO ] 2022-12-05 14:17:04.922 [http-nio-8080-exec-1] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[ERROR] 2022-12-05 14:17:11.448 [http-nio-8080-exec-2] UserServiceImpl - User with id 5 doesn't exists.
-[INFO ] 2022-12-05 14:18:45.510 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 2012 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-05 14:18:45.513 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-05 14:18:45.514 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-05 14:18:47.699 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.351 seconds (process running for 3.064)
-[INFO ] 2022-12-05 14:18:53.749 [http-nio-8080-exec-2] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-05 14:18:57.627 [http-nio-8080-exec-3] UserServiceImpl - User with id 1 updated succesfully. Method: updateUser
-[INFO ] 2022-12-05 14:18:57.632 [http-nio-8080-exec-3] UserServiceImpl - User found 
-Name='Francisco'
-LastName='Poblete'
-[INFO ] 2022-12-05 21:28:25.419 [main] UserServiceImplTest - Starting UserServiceImplTest using Java 19 with PID 5876 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-05 21:28:25.421 [main] UserServiceImplTest - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-05 21:28:25.421 [main] UserServiceImplTest - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-05 21:28:28.643 [main] UserServiceImplTest - Started UserServiceImplTest in 3.365 seconds (process running for 4.751)
-[ERROR] 2022-12-05 21:28:28.884 [main] UserServiceImpl - There aren't any users. Method: searchAllUsers
-[INFO ] 2022-12-05 21:29:25.826 [main] UserServiceImplTest - Starting UserServiceImplTest using Java 19 with PID 5896 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-05 21:29:25.828 [main] UserServiceImplTest - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-05 21:29:25.829 [main] UserServiceImplTest - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-05 21:29:28.649 [main] UserServiceImplTest - Started UserServiceImplTest in 2.961 seconds (process running for 3.97)
-[INFO ] 2022-12-05 21:29:28.854 [main] UserServiceImpl - User saved succesfully.
-Name='Andres'
-LastName='Poblete'
-[INFO ] 2022-12-05 21:29:28.857 [main] UserServiceImpl - User saved succesfully.
-Name='Fernando'
-LastName='Ramirez'
-[INFO ] 2022-12-05 21:29:28.858 [main] UserServiceImpl - User saved succesfully.
-Name='Lucas'
-LastName='Galvan'
-[INFO ] 2022-12-05 21:29:28.901 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 21:45:15.881 [main] UserServiceImplTest - Starting UserServiceImplTest using Java 19 with PID 6185 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-05 21:45:15.884 [main] UserServiceImplTest - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-05 21:45:15.885 [main] UserServiceImplTest - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-05 21:45:18.069 [main] UserServiceImplTest - Started UserServiceImplTest in 2.31 seconds (process running for 3.377)
-[INFO ] 2022-12-05 21:45:18.222 [main] UserServiceImpl - User saved succesfully.
-Name='Andres'
-LastName='Poblete'
-[INFO ] 2022-12-05 21:45:18.224 [main] UserServiceImpl - User saved succesfully.
-Name='Fernando'
-LastName='Ramirez'
-[INFO ] 2022-12-05 21:45:18.224 [main] UserServiceImpl - User saved succesfully.
-Name='Lucas'
-LastName='Galvan'
-[INFO ] 2022-12-05 21:45:18.255 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 21:45:52.166 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 6211 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-05 21:45:52.171 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-05 21:45:52.172 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-05 21:45:54.369 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.393 seconds (process running for 2.96)
-[INFO ] 2022-12-05 21:45:57.186 [http-nio-8080-exec-2] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-05 21:46:01.808 [http-nio-8080-exec-3] UserServiceImpl - User found 
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-05 21:46:18.983 [http-nio-8080-exec-4] UserServiceImpl - User with id 1 updated succesfully. Method: updateUser
-[INFO ] 2022-12-05 21:46:18.994 [http-nio-8080-exec-4] UserServiceImpl - User found 
-Name='Francisco'
-LastName='Poblete'
-[INFO ] 2022-12-05 21:47:09.511 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 6277 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-05 21:47:09.515 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-05 21:47:09.516 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-05 21:47:11.751 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.426 seconds (process running for 3.035)
-[INFO ] 2022-12-05 21:47:15.055 [http-nio-8080-exec-2] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-05 21:47:18.046 [http-nio-8080-exec-3] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-05 21:47:20.931 [http-nio-8080-exec-4] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 21:48:12.838 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 6301 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-05 21:48:12.842 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-05 21:48:12.843 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-05 21:48:14.912 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.257 seconds (process running for 2.77)
-[INFO ] 2022-12-05 21:48:31.019 [http-nio-8080-exec-2] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-05 21:48:33.227 [http-nio-8080-exec-3] UserServiceImpl - User found 
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-05 21:48:33.228 [http-nio-8080-exec-3] UserServiceImpl - User deleted Optional[com.integradordh.trabajofinal.models.User@3dd2ce9b]. Method: deleteUserById
-[INFO ] 2022-12-05 21:49:44.268 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 with PID 6318 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-05 21:49:44.274 [main] TrabajofinalApplication - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-05 21:49:44.275 [main] TrabajofinalApplication - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-05 21:49:46.439 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.336 seconds (process running for 3.008)
-[INFO ] 2022-12-05 21:49:50.982 [http-nio-8080-exec-2] UserServiceImpl - User saved succesfully.
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-05 21:50:00.179 [http-nio-8080-exec-3] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 21:50:02.588 [http-nio-8080-exec-4] UserServiceImpl - User found 
-Name='Martin'
-LastName='Poblete'
-[INFO ] 2022-12-05 21:50:02.589 [http-nio-8080-exec-4] UserServiceImpl - User deleted Optional[com.integradordh.trabajofinal.models.User@393810e9]. Method: deleteUserById
-[ERROR] 2022-12-05 21:50:06.469 [http-nio-8080-exec-5] UserServiceImpl - User with id 1 doesn't exists. Method: updateUser
-[INFO ] 2022-12-05 21:53:15.634 [main] UserServiceImplTest - Starting UserServiceImplTest using Java 19 with PID 6351 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-05 21:53:15.636 [main] UserServiceImplTest - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-05 21:53:15.637 [main] UserServiceImplTest - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-05 21:53:17.765 [main] UserServiceImplTest - Started UserServiceImplTest in 2.241 seconds (process running for 3.426)
-[ERROR] 2022-12-05 21:53:17.904 [main] UserServiceImpl - There aren't any users. Method: searchAllUsers
-[ERROR] 2022-12-05 21:53:17.915 [main] UserServiceImpl - There aren't any users. Method: searchAllUsers
-[ERROR] 2022-12-05 21:53:17.920 [main] UserServiceImpl - There aren't any users. Method: searchAllUsers
-[INFO ] 2022-12-05 21:53:17.959 [main] UserServiceImpl - User saved succesfully.
-Name='Andres'
-LastName='Poblete'
-[INFO ] 2022-12-05 21:53:17.960 [main] UserServiceImpl - User saved succesfully.
-Name='Fernando'
-LastName='Ramirez'
-[INFO ] 2022-12-05 21:53:17.961 [main] UserServiceImpl - User saved succesfully.
-Name='Lucas'
-LastName='Galvan'
-[INFO ] 2022-12-05 21:53:17.966 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 21:53:17.974 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 21:53:17.982 [main] UserServiceImpl - User deleted Optional[com.integradordh.trabajofinal.models.User@8850865]. Method: deleteUserById
-[ERROR] 2022-12-05 21:53:17.993 [main] UserServiceImpl - User with id: 1 doesn't exists.
-[INFO ] 2022-12-05 21:55:11.075 [main] UserServiceImplTest - Starting UserServiceImplTest using Java 19 with PID 6390 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-05 21:55:11.078 [main] UserServiceImplTest - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-05 21:55:11.079 [main] UserServiceImplTest - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-05 21:55:13.064 [main] UserServiceImplTest - Started UserServiceImplTest in 2.116 seconds (process running for 2.862)
-[INFO ] 2022-12-05 21:55:13.266 [main] UserServiceImpl - User saved succesfully.
-Name='Andres'
-LastName='Poblete'
-[INFO ] 2022-12-05 21:55:13.267 [main] UserServiceImpl - User saved succesfully.
-Name='Fernando'
-LastName='Ramirez'
-[INFO ] 2022-12-05 21:55:13.268 [main] UserServiceImpl - User saved succesfully.
-Name='Lucas'
-LastName='Galvan'
-[INFO ] 2022-12-05 21:55:13.310 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 21:55:18.209 [main] UserServiceImplTest - Starting UserServiceImplTest using Java 19 with PID 6399 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-05 21:55:18.210 [main] UserServiceImplTest - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-05 21:55:18.211 [main] UserServiceImplTest - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-05 21:55:20.209 [main] UserServiceImplTest - Started UserServiceImplTest in 2.119 seconds (process running for 2.926)
-[ERROR] 2022-12-05 21:55:20.332 [main] UserServiceImpl - There aren't any users. Method: searchAllUsers
-[ERROR] 2022-12-05 21:55:20.345 [main] UserServiceImpl - There aren't any users. Method: searchAllUsers
-[ERROR] 2022-12-05 21:55:20.352 [main] UserServiceImpl - There aren't any users. Method: searchAllUsers
-[INFO ] 2022-12-05 21:55:20.396 [main] UserServiceImpl - User saved succesfully.
-Name='Andres'
-LastName='Poblete'
-[INFO ] 2022-12-05 21:55:20.397 [main] UserServiceImpl - User saved succesfully.
-Name='Fernando'
-LastName='Ramirez'
-[INFO ] 2022-12-05 21:55:20.397 [main] UserServiceImpl - User saved succesfully.
-Name='Lucas'
-LastName='Galvan'
-[INFO ] 2022-12-05 21:55:20.404 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 21:55:20.410 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 21:55:20.416 [main] UserServiceImpl - User deleted Optional[com.integradordh.trabajofinal.models.User@8850865]. Method: deleteUserById
-[ERROR] 2022-12-05 21:55:20.421 [main] UserServiceImpl - User with id: 1 doesn't exists.
-[INFO ] 2022-12-05 21:57:11.265 [main] UserServiceImplTest - Starting UserServiceImplTest using Java 19 with PID 6408 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-05 21:57:11.267 [main] UserServiceImplTest - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-05 21:57:11.267 [main] UserServiceImplTest - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-05 21:57:13.413 [main] UserServiceImplTest - Started UserServiceImplTest in 2.267 seconds (process running for 3.479)
-[ERROR] 2022-12-05 21:57:13.551 [main] UserServiceImpl - There aren't any users. Method: searchAllUsers
-[ERROR] 2022-12-05 21:57:13.562 [main] UserServiceImpl - There aren't any users. Method: searchAllUsers
-[ERROR] 2022-12-05 21:57:13.568 [main] UserServiceImpl - There aren't any users. Method: searchAllUsers
-[INFO ] 2022-12-05 21:57:13.609 [main] UserServiceImpl - User saved succesfully.
-Name='Andres'
-LastName='Poblete'
-[INFO ] 2022-12-05 21:57:13.610 [main] UserServiceImpl - User saved succesfully.
-Name='Fernando'
-LastName='Ramirez'
-[INFO ] 2022-12-05 21:57:13.611 [main] UserServiceImpl - User saved succesfully.
-Name='Lucas'
-LastName='Galvan'
-[INFO ] 2022-12-05 21:57:13.626 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 21:57:13.631 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 21:57:13.638 [main] UserServiceImpl - User deleted Optional[com.integradordh.trabajofinal.models.User@8850865]. Method: deleteUserById
-[ERROR] 2022-12-05 21:57:13.643 [main] UserServiceImpl - User with id: 1 doesn't exists.
-[INFO ] 2022-12-05 22:54:17.121 [main] UserServiceImplTest - Starting UserServiceImplTest using Java 19 with PID 7294 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-05 22:54:17.123 [main] UserServiceImplTest - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-05 22:54:17.123 [main] UserServiceImplTest - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-05 22:54:19.303 [main] UserServiceImplTest - Started UserServiceImplTest in 2.296 seconds (process running for 3.13)
-[INFO ] 2022-12-05 22:54:19.436 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 22:54:19.473 [main] UserServiceImpl - User saved succesfully.
-Name='Andres'
-LastName='Poblete'
-[INFO ] 2022-12-05 22:54:19.474 [main] UserServiceImpl - User saved succesfully.
-Name='Fernando'
-LastName='Ramirez'
-[INFO ] 2022-12-05 22:54:19.475 [main] UserServiceImpl - User saved succesfully.
-Name='Lucas'
-LastName='Galvan'
-[INFO ] 2022-12-05 22:54:19.484 [main] UserServiceImpl - User found 
-Name='Andres'
-LastName='Poblete'
-[INFO ] 2022-12-05 22:54:19.493 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 22:54:19.494 [main] UserServiceImpl - User found 
-Name='Andres'
-LastName='Poblete'
-[INFO ] 2022-12-05 22:54:19.502 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 22:54:19.503 [main] UserServiceImpl - User with id 1 updated succesfully. Method: updateUser
-[INFO ] 2022-12-05 22:54:19.510 [main] UserServiceImpl - User found 
-Name='Pablo'
-LastName='Moreno'
-[INFO ] 2022-12-05 22:54:19.514 [main] UserServiceImpl - User saved succesfully.
-Name='Andres'
-LastName='Poblete'
-[INFO ] 2022-12-05 22:54:19.515 [main] UserServiceImpl - User saved succesfully.
-Name='Fernando'
-LastName='Ramirez'
-[INFO ] 2022-12-05 22:54:19.516 [main] UserServiceImpl - User saved succesfully.
-Name='Lucas'
-LastName='Galvan'
-[INFO ] 2022-12-05 22:54:19.519 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 22:54:19.525 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 22:54:19.528 [main] UserServiceImpl - User deleted Optional[com.integradordh.trabajofinal.models.User@5ce34685]. Method: deleteUserById
-[ERROR] 2022-12-05 22:54:19.535 [main] UserServiceImpl - User with id: 1 doesn't exists.
-[INFO ] 2022-12-05 23:00:43.935 [main] UserServiceImplTest - Starting UserServiceImplTest using Java 19 with PID 7480 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-05 23:00:43.937 [main] UserServiceImplTest - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-05 23:00:43.937 [main] UserServiceImplTest - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-05 23:00:46.619 [main] UserServiceImplTest - Started UserServiceImplTest in 2.797 seconds (process running for 3.86)
-[INFO ] 2022-12-05 23:00:46.782 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 23:00:46.819 [main] UserServiceImpl - User saved succesfully.
-Name='Andres'
-LastName='Poblete'
-[INFO ] 2022-12-05 23:00:46.820 [main] UserServiceImpl - User saved succesfully.
-Name='Fernando'
-LastName='Ramirez'
-[INFO ] 2022-12-05 23:00:46.821 [main] UserServiceImpl - User saved succesfully.
-Name='Lucas'
-LastName='Galvan'
-[INFO ] 2022-12-05 23:00:46.832 [main] UserServiceImpl - User deleted Optional[com.integradordh.trabajofinal.models.User@5f65a6d7]. Method: deleteUserById
-[ERROR] 2022-12-05 23:00:46.840 [main] UserServiceImpl - User with id: 1 doesn't exists.
-[INFO ] 2022-12-05 23:00:52.837 [main] UserServiceImplTest - Starting UserServiceImplTest using Java 19 with PID 7490 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-05 23:00:52.839 [main] UserServiceImplTest - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-05 23:00:52.839 [main] UserServiceImplTest - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-05 23:00:55.130 [main] UserServiceImplTest - Started UserServiceImplTest in 2.405 seconds (process running for 3.282)
-[INFO ] 2022-12-05 23:00:55.259 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 23:00:55.302 [main] UserServiceImpl - User saved succesfully.
-Name='Andres'
-LastName='Poblete'
-[INFO ] 2022-12-05 23:00:55.304 [main] UserServiceImpl - User saved succesfully.
-Name='Fernando'
-LastName='Ramirez'
-[INFO ] 2022-12-05 23:00:55.304 [main] UserServiceImpl - User saved succesfully.
-Name='Lucas'
-LastName='Galvan'
-[INFO ] 2022-12-05 23:00:55.313 [main] UserServiceImpl - User found 
-Name='Andres'
-LastName='Poblete'
-[INFO ] 2022-12-05 23:00:55.327 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 23:00:55.328 [main] UserServiceImpl - User found 
-Name='Andres'
-LastName='Poblete'
-[INFO ] 2022-12-05 23:00:55.334 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 23:00:55.336 [main] UserServiceImpl - User with id 1 updated succesfully. Method: updateUser
-[INFO ] 2022-12-05 23:00:55.343 [main] UserServiceImpl - User found 
-Name='Pablo'
-LastName='Moreno'
-[INFO ] 2022-12-05 23:00:55.350 [main] UserServiceImpl - User saved succesfully.
-Name='Andres'
-LastName='Poblete'
-[INFO ] 2022-12-05 23:00:55.356 [main] UserServiceImpl - User saved succesfully.
-Name='Fernando'
-LastName='Ramirez'
-[INFO ] 2022-12-05 23:00:55.367 [main] UserServiceImpl - User saved succesfully.
-Name='Lucas'
-LastName='Galvan'
-[INFO ] 2022-12-05 23:00:55.373 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 23:00:55.386 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 23:00:55.389 [main] UserServiceImpl - User deleted Optional[com.integradordh.trabajofinal.models.User@5ce34685]. Method: deleteUserById
-[ERROR] 2022-12-05 23:00:55.398 [main] UserServiceImpl - User with id: 1 doesn't exists.
-[INFO ] 2022-12-05 23:01:21.562 [main] UserServiceImplTest - Starting UserServiceImplTest using Java 19 with PID 7499 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
-[DEBUG] 2022-12-05 23:01:21.563 [main] UserServiceImplTest - Running with Spring Boot v3.0.0, Spring v6.0.2
-[INFO ] 2022-12-05 23:01:21.564 [main] UserServiceImplTest - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2022-12-05 23:01:23.657 [main] UserServiceImplTest - Started UserServiceImplTest in 2.208 seconds (process running for 2.992)
-[INFO ] 2022-12-05 23:01:23.782 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 23:01:23.817 [main] UserServiceImpl - User saved succesfully.
-Name='Andres'
-LastName='Poblete'
-[INFO ] 2022-12-05 23:01:23.818 [main] UserServiceImpl - User saved succesfully.
-Name='Fernando'
-LastName='Ramirez'
-[INFO ] 2022-12-05 23:01:23.819 [main] UserServiceImpl - User saved succesfully.
-Name='Lucas'
-LastName='Galvan'
-[INFO ] 2022-12-05 23:01:23.829 [main] UserServiceImpl - User found 
-Name='Andres'
-LastName='Poblete'
-[INFO ] 2022-12-05 23:01:23.846 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 23:01:23.847 [main] UserServiceImpl - User found 
-Name='Andres'
-LastName='Poblete'
-[INFO ] 2022-12-05 23:01:23.852 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 23:01:23.853 [main] UserServiceImpl - User with id 1 updated succesfully. Method: updateUser
-[INFO ] 2022-12-05 23:01:23.858 [main] UserServiceImpl - User found 
-Name='Pablo'
-LastName='Moreno'
-[INFO ] 2022-12-05 23:01:23.863 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 23:01:23.864 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 23:01:23.869 [main] UserServiceImpl - Showing all users. Method: searchAllUsers
-[INFO ] 2022-12-05 23:01:23.873 [main] UserServiceImpl - User deleted Optional[com.integradordh.trabajofinal.models.User@45bde54d]. Method: deleteUserById
-[ERROR] 2022-12-05 23:01:23.880 [main] UserServiceImpl - User with id: 1 doesn't exists.
+[INFO ] 2022-12-07 17:44:56.103 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 30158 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-07 17:44:56.106 [main] TrabajofinalApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-07 17:44:56.106 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2022-12-07 17:44:57.666 [main] JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2022-12-07 17:44:58.059 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.099 seconds (JVM running for 2.644)
+[INFO ] 2022-12-07 21:23:24.063 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 33564 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-07 21:23:24.066 [main] TrabajofinalApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-07 21:23:24.066 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2022-12-07 21:23:25.713 [main] JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2022-12-07 21:23:26.113 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.194 seconds (JVM running for 2.984)
+[INFO ] 2022-12-07 22:01:46.130 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 34839 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-07 22:01:46.135 [main] TrabajofinalApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-07 22:01:46.136 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2022-12-07 22:01:47.822 [main] JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2022-12-07 22:01:48.234 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.253 seconds (JVM running for 2.964)
+[INFO ] 2022-12-08 11:15:10.219 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 39584 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 11:15:10.222 [main] TrabajofinalApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 11:15:10.223 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2022-12-08 11:15:11.822 [main] JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2022-12-08 11:15:12.240 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.164 seconds (JVM running for 2.842)
+[INFO ] 2022-12-08 11:18:59.726 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 39650 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 11:18:59.729 [main] TrabajofinalApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 11:18:59.729 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2022-12-08 11:19:01.318 [main] JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2022-12-08 11:19:01.715 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.13 seconds (JVM running for 2.791)
+[INFO ] 2022-12-08 11:20:59.955 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 39704 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 11:20:59.959 [main] TrabajofinalApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 11:20:59.960 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2022-12-08 11:21:01.653 [main] JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2022-12-08 11:21:02.113 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.308 seconds (JVM running for 3.087)
+[INFO ] 2022-12-08 11:24:03.068 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 39775 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 11:24:03.073 [main] TrabajofinalApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 11:24:03.073 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2022-12-08 11:24:04.897 [main] JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2022-12-08 11:24:05.297 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.481 seconds (JVM running for 3.635)
+[INFO ] 2022-12-08 11:24:22.553 [http-nio-8080-exec-3] PatientServiceImpl - Patient saved succesfully. 
+Name: Ruben
+Last name: Nazario
+National id: 38416140
+Registration date: 2022-11-25
+Address: Avenida Siempre Viva . Method savePatient.
+[WARN ] 2022-12-08 11:24:36.786 [http-nio-8080-exec-5] PatientServiceImpl - Patient with national id 38416140 already exists. Method savePatient
+[INFO ] 2022-12-08 11:24:50.134 [http-nio-8080-exec-7] PatientServiceImpl - Patient saved succesfully. 
+Name: Ruben
+Last name: Nazario
+National id: 38416141
+Registration date: 2022-11-25
+Address: Avenida Siempre Viva . Method savePatient.
+[INFO ] 2022-12-08 11:31:18.043 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 39883 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 11:31:18.046 [main] TrabajofinalApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 11:31:18.046 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2022-12-08 11:31:19.789 [main] JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2022-12-08 11:31:20.305 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.404 seconds (JVM running for 3.178)
+[INFO ] 2022-12-08 11:39:58.655 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 40032 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 11:39:58.658 [main] TrabajofinalApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 11:39:58.659 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2022-12-08 11:40:00.337 [main] JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2022-12-08 11:40:00.745 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.241 seconds (JVM running for 2.975)
+[INFO ] 2022-12-08 11:41:59.680 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 40142 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 11:41:59.684 [main] TrabajofinalApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 11:41:59.684 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2022-12-08 11:42:01.331 [main] JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2022-12-08 11:43:45.027 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 40238 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 11:43:45.030 [main] TrabajofinalApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 11:43:45.031 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2022-12-08 11:43:46.743 [main] JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2022-12-08 11:43:47.158 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.32 seconds (JVM running for 2.895)
+[INFO ] 2022-12-08 11:44:47.553 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 40254 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 11:44:47.555 [main] TrabajofinalApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 11:44:47.556 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2022-12-08 11:44:49.213 [main] JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2022-12-08 11:44:49.595 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.198 seconds (JVM running for 2.903)
+[INFO ] 2022-12-08 11:45:03.310 [http-nio-8080-exec-3] PatientServiceImpl - Patient saved succesfully. 
+Name: Ruben
+Last name: Nazario
+National id: 38416141
+Registration date: 2022-11-25
+Address: Avenida Siempre Viva . Method savePatient.
+[INFO ] 2022-12-08 11:47:33.834 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 40300 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 11:47:33.838 [main] TrabajofinalApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 11:47:33.838 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2022-12-08 11:47:35.449 [main] JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2022-12-08 11:47:35.864 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.175 seconds (JVM running for 3.04)
+[INFO ] 2022-12-08 11:48:03.758 [http-nio-8080-exec-5] PatientServiceImpl - Patient saved succesfully. 
+Name: Ruben
+Last name: Nazario
+National id: 38416141
+Registration date: 2022-11-25
+Address: Avenida Siempre Viva . Method savePatient.
+[INFO ] 2022-12-08 11:49:52.918 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 40409 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 11:49:52.921 [main] TrabajofinalApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 11:49:52.921 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2022-12-08 11:49:54.542 [main] JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2022-12-08 11:49:54.943 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.168 seconds (JVM running for 2.892)
+[INFO ] 2022-12-08 11:50:21.319 [http-nio-8080-exec-5] PatientServiceImpl - Dentist saved succesfully. 
+Name = Rodrigo
+Lastname = Lucero
+License number = 1231447. Method saveDentist.
+[INFO ] 2022-12-08 11:52:20.511 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 40452 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 11:52:20.514 [main] TrabajofinalApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 11:52:20.514 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2022-12-08 11:52:22.194 [main] JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2022-12-08 11:52:22.694 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.362 seconds (JVM running for 2.949)
+[INFO ] 2022-12-08 11:52:28.170 [http-nio-8080-exec-2] PatientServiceImpl - Patient saved succesfully. 
+Name: Ruben
+Last name: Nazario
+National id: 38416141
+Registration date: 2022-11-25
+Address: Avenida Siempre Viva . Method savePatient.
+[INFO ] 2022-12-08 11:52:33.206 [http-nio-8080-exec-3] PatientServiceImpl - Dentist saved succesfully. 
+Name = Rodrigo
+Lastname = Lucero
+License number = 1231447. Method saveDentist.
+[INFO ] 2022-12-08 11:53:01.606 [http-nio-8080-exec-8] PatientServiceImpl - Patient with id 1 found successfully. Method searchPatientById
+[INFO ] 2022-12-08 11:53:01.623 [http-nio-8080-exec-8] PatientServiceImpl - Patient with id 1 deleted succesfully. Method deletePatientById
+[ERROR] 2022-12-08 11:53:25.557 [http-nio-8080-exec-10] PatientServiceImpl - Dentist with id 1 doesn't exists. Method searchDentistById
+[INFO ] 2022-12-08 11:53:33.425 [http-nio-8080-exec-1] PatientServiceImpl - Dentist with id 2 found successfully. Method searchDentistById
+[INFO ] 2022-12-08 11:53:33.433 [http-nio-8080-exec-1] PatientServiceImpl - Dentist with id 2 deleted successfully. Method deleteDentistById
+[INFO ] 2022-12-08 11:53:50.270 [http-nio-8080-exec-2] PatientServiceImpl - Dentist saved succesfully. 
+Name = Rodrigo
+Lastname = Lucero
+License number = 1231447. Method saveDentist.
+[ERROR] 2022-12-08 11:54:37.357 [http-nio-8080-exec-6] PatientServiceImpl - Dentist with id 2 doesn't exists. Method searchDentistById
+[INFO ] 2022-12-08 11:56:26.510 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 40633 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 11:56:26.513 [main] TrabajofinalApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 11:56:26.514 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2022-12-08 11:56:28.119 [main] JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2022-12-08 11:56:28.514 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.165 seconds (JVM running for 2.884)
+[ERROR] 2022-12-08 11:57:01.748 [http-nio-8080-exec-5] PatientServiceImpl - Patient with id 1 doesn't exists. Method searchPatientById
+[ERROR] 2022-12-08 11:57:11.522 [http-nio-8080-exec-6] PatientServiceImpl - Patient with national id 38416140 doesn't exists. Method updatePatient
+[INFO ] 2022-12-08 12:01:29.127 [http-nio-8080-exec-5] PatientServiceImpl - Patient saved succesfully. 
+Name: Ruben
+Last name: Nazario
+National id: 38416141
+Registration date: 2022-11-25
+Address: Avenida Siempre Viva . Method savePatient.
+[INFO ] 2022-12-08 12:01:34.691 [http-nio-8080-exec-6] PatientServiceImpl - Dentist saved succesfully. 
+Name = Rodrigo
+Lastname = Lucero
+License number = 1231447. Method saveDentist.
+[INFO ] 2022-12-08 12:01:39.700 [http-nio-8080-exec-7] PatientServiceImpl - Dentist with license number 1231447 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[ERROR] 2022-12-08 12:01:39.718 [http-nio-8080-exec-7] PatientServiceImpl - Patient with national id 38416140 doesn't exists. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:01:56.824 [http-nio-8080-exec-8] PatientServiceImpl - Patient saved succesfully. 
+Name: Ruben
+Last name: Nazario
+National id: 38416140
+Registration date: 2022-11-25
+Address: Avenida Siempre Viva . Method savePatient.
+[INFO ] 2022-12-08 12:01:59.277 [http-nio-8080-exec-9] PatientServiceImpl - Dentist with license number 1231447 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:01:59.284 [http-nio-8080-exec-9] PatientServiceImpl - Patient with national id 38416140 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:01:59.290 [http-nio-8080-exec-9] PatientServiceImpl - Patient with national id 38416140 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:01:59.291 [http-nio-8080-exec-9] PatientServiceImpl - Dentist with license number 1231447 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:01:59.295 [http-nio-8080-exec-9] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Rodrigo Lucero (1231447)
+Patient: Ruben Nazario (38416140)
+Date: 2022-11-25
+Time: 10:15:30. Method saveAppointment.
+[ERROR] 2022-12-08 12:02:11.783 [http-nio-8080-exec-10] PatientServiceImpl - Appointment with id 3 doesn't exists. Method updateAppointment.
+[ERROR] 2022-12-08 12:02:18.756 [http-nio-8080-exec-1] PatientServiceImpl - Appointment with id 1 doesn't exists. Method updateAppointment.
+[INFO ] 2022-12-08 12:03:08.417 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 40838 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 12:03:08.420 [main] TrabajofinalApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 12:03:08.421 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[DEBUG] 2022-12-08 12:03:09.990 [main] JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+[INFO ] 2022-12-08 12:03:10.400 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.126 seconds (JVM running for 2.783)
+[INFO ] 2022-12-08 12:03:39.783 [main] AppointmentServiceImplTest - Starting AppointmentServiceImplTest using Java 19 on MacBook-Pro-de-Fernando.local with PID 40852 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 12:03:39.784 [main] AppointmentServiceImplTest - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 12:03:39.786 [main] AppointmentServiceImplTest - No active profile set, falling back to default profiles: default
+[INFO ] 2022-12-08 12:03:41.942 [main] AppointmentServiceImplTest - Started AppointmentServiceImplTest in 2.253 seconds (JVM running for 3.011)
+[INFO ] 2022-12-08 12:03:42.184 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Andres
+Lastname = Poblete
+License number = 14123. Method saveDentist.
+[INFO ] 2022-12-08 12:03:42.186 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Pablo
+Lastname = Perez
+License number = 44213. Method saveDentist.
+[INFO ] 2022-12-08 12:03:42.187 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Marcos
+Lastname = Acuña
+License number = 11231. Method saveDentist.
+[INFO ] 2022-12-08 12:03:42.192 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Andres
+Last name: Poblete
+National id: 38416140
+Registration date: 2022-12-08
+Address: Mendoza. Method savePatient.
+[INFO ] 2022-12-08 12:03:42.198 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Pablo
+Last name: Guevara
+National id: 11453231
+Registration date: 2022-12-08
+Address: San Juan. Method savePatient.
+[INFO ] 2022-12-08 12:03:42.200 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Marcos
+Last name: Mitre
+National id: 5432123
+Registration date: 2022-12-08
+Address: Entre Rios. Method savePatient.
+[INFO ] 2022-12-08 12:03:42.203 [main] PatientServiceImpl - Dentist with license number 14123 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:03:42.228 [main] PatientServiceImpl - Dentist with license number 44213 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:03:42.229 [main] PatientServiceImpl - Dentist with license number 11231 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:03:42.230 [main] PatientServiceImpl - Patient with national id 38416140 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:03:42.233 [main] PatientServiceImpl - Patient with national id 11453231 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:03:42.234 [main] PatientServiceImpl - Patient with national id 5432123 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:03:42.235 [main] PatientServiceImpl - Patient with national id 38416140 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:03:42.236 [main] PatientServiceImpl - Dentist with license number 14123 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:03:42.238 [main] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Andres Poblete (14123)
+Patient: Andres Poblete (38416140)
+Date: 2022-12-15
+Time: 12:03:42.201083. Method saveAppointment.
+[INFO ] 2022-12-08 12:03:42.243 [main] PatientServiceImpl - Patient with national id 11453231 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:03:42.243 [main] PatientServiceImpl - Dentist with license number 44213 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:03:42.243 [main] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Pablo Perez (44213)
+Patient: Pablo Guevara (11453231)
+Date: 2022-12-15
+Time: 12:03:42.201083. Method saveAppointment.
+[INFO ] 2022-12-08 12:03:42.245 [main] PatientServiceImpl - Patient with national id 5432123 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:03:42.245 [main] PatientServiceImpl - Dentist with license number 11231 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:03:42.246 [main] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Marcos Acuña (11231)
+Patient: Marcos Mitre (5432123)
+Date: 2022-12-15
+Time: 12:03:42.201083. Method saveAppointment.
+[ERROR] 2022-12-08 12:03:42.252 [main] PatientServiceImpl - Appointment with id 7 doesn't exists. Method searchAppointmentById.
+[ERROR] 2022-12-08 12:03:42.287 [main] PatientServiceImpl - Appointment with id 7 doesn't exists. Method searchAppointmentById.
+[INFO ] 2022-12-08 12:03:42.300 [main] PatientServiceImpl - Appointments found successfully. Method searchAppointmentsByDentistLicense.
+[INFO ] 2022-12-08 12:03:42.310 [main] PatientServiceImpl - Appointments found successfully. Method searchAppointmentsByPatientNationalId.
+[ERROR] 2022-12-08 12:03:42.318 [main] PatientServiceImpl - Appointment with id 7 doesn't exists. Method searchAppointmentDTOCompleteById.
+[ERROR] 2022-12-08 12:03:42.326 [main] PatientServiceImpl - Appointment with id 7 doesn't exists. Method deleteAppointment
+[INFO ] 2022-12-08 12:04:33.845 [main] AppointmentServiceImplTest - Starting AppointmentServiceImplTest using Java 19 on MacBook-Pro-de-Fernando.local with PID 40873 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 12:04:33.846 [main] AppointmentServiceImplTest - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 12:04:33.847 [main] AppointmentServiceImplTest - No active profile set, falling back to default profiles: default
+[INFO ] 2022-12-08 12:04:36.127 [main] AppointmentServiceImplTest - Started AppointmentServiceImplTest in 2.414 seconds (JVM running for 3.229)
+[INFO ] 2022-12-08 12:04:36.385 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Andres
+Lastname = Poblete
+License number = 14123. Method saveDentist.
+[INFO ] 2022-12-08 12:04:36.389 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Pablo
+Lastname = Perez
+License number = 44213. Method saveDentist.
+[INFO ] 2022-12-08 12:04:36.390 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Marcos
+Lastname = Acuña
+License number = 11231. Method saveDentist.
+[INFO ] 2022-12-08 12:04:36.395 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Andres
+Last name: Poblete
+National id: 38416140
+Registration date: 2022-12-08
+Address: Mendoza. Method savePatient.
+[INFO ] 2022-12-08 12:04:36.400 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Pablo
+Last name: Guevara
+National id: 11453231
+Registration date: 2022-12-08
+Address: San Juan. Method savePatient.
+[INFO ] 2022-12-08 12:04:36.401 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Marcos
+Last name: Mitre
+National id: 5432123
+Registration date: 2022-12-08
+Address: Entre Rios. Method savePatient.
+[INFO ] 2022-12-08 12:04:36.405 [main] PatientServiceImpl - Dentist with license number 14123 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:04:36.426 [main] PatientServiceImpl - Dentist with license number 44213 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:04:36.426 [main] PatientServiceImpl - Dentist with license number 11231 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:04:36.427 [main] PatientServiceImpl - Patient with national id 38416140 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:04:36.430 [main] PatientServiceImpl - Patient with national id 11453231 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:04:36.431 [main] PatientServiceImpl - Patient with national id 5432123 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:04:36.432 [main] PatientServiceImpl - Patient with national id 38416140 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:04:36.433 [main] PatientServiceImpl - Dentist with license number 14123 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:04:36.434 [main] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Andres Poblete (14123)
+Patient: Andres Poblete (38416140)
+Date: 2022-12-15
+Time: 12:04:36.402548. Method saveAppointment.
+[INFO ] 2022-12-08 12:04:36.437 [main] PatientServiceImpl - Patient with national id 11453231 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:04:36.438 [main] PatientServiceImpl - Dentist with license number 44213 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:04:36.438 [main] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Pablo Perez (44213)
+Patient: Pablo Guevara (11453231)
+Date: 2022-12-15
+Time: 12:04:36.402548. Method saveAppointment.
+[INFO ] 2022-12-08 12:04:36.440 [main] PatientServiceImpl - Patient with national id 5432123 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:04:36.440 [main] PatientServiceImpl - Dentist with license number 11231 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:04:36.440 [main] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Marcos Acuña (11231)
+Patient: Marcos Mitre (5432123)
+Date: 2022-12-15
+Time: 12:04:36.402548. Method saveAppointment.
+[INFO ] 2022-12-08 12:04:36.448 [main] PatientServiceImpl - Appointment with id 4 found succesfully. Method searchAppointmentById.
+[INFO ] 2022-12-08 12:05:08.832 [main] AppointmentServiceImplTest - Starting AppointmentServiceImplTest using Java 19 on MacBook-Pro-de-Fernando.local with PID 40890 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 12:05:08.833 [main] AppointmentServiceImplTest - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 12:05:08.834 [main] AppointmentServiceImplTest - No active profile set, falling back to default profiles: default
+[INFO ] 2022-12-08 12:05:10.936 [main] AppointmentServiceImplTest - Started AppointmentServiceImplTest in 2.203 seconds (JVM running for 3.137)
+[INFO ] 2022-12-08 12:05:11.147 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Andres
+Lastname = Poblete
+License number = 14123. Method saveDentist.
+[INFO ] 2022-12-08 12:05:11.149 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Pablo
+Lastname = Perez
+License number = 44213. Method saveDentist.
+[INFO ] 2022-12-08 12:05:11.150 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Marcos
+Lastname = Acuña
+License number = 11231. Method saveDentist.
+[INFO ] 2022-12-08 12:05:11.155 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Andres
+Last name: Poblete
+National id: 38416140
+Registration date: 2022-12-08
+Address: Mendoza. Method savePatient.
+[INFO ] 2022-12-08 12:05:11.160 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Pablo
+Last name: Guevara
+National id: 11453231
+Registration date: 2022-12-08
+Address: San Juan. Method savePatient.
+[INFO ] 2022-12-08 12:05:11.161 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Marcos
+Last name: Mitre
+National id: 5432123
+Registration date: 2022-12-08
+Address: Entre Rios. Method savePatient.
+[INFO ] 2022-12-08 12:05:11.166 [main] PatientServiceImpl - Dentist with license number 14123 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:05:11.188 [main] PatientServiceImpl - Dentist with license number 44213 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:05:11.189 [main] PatientServiceImpl - Dentist with license number 11231 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:05:11.190 [main] PatientServiceImpl - Patient with national id 38416140 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:05:11.193 [main] PatientServiceImpl - Patient with national id 11453231 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:05:11.193 [main] PatientServiceImpl - Patient with national id 5432123 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:05:11.194 [main] PatientServiceImpl - Patient with national id 38416140 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:05:11.195 [main] PatientServiceImpl - Dentist with license number 14123 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:05:11.196 [main] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Andres Poblete (14123)
+Patient: Andres Poblete (38416140)
+Date: 2022-12-15
+Time: 12:05:11.163108. Method saveAppointment.
+[INFO ] 2022-12-08 12:05:11.200 [main] PatientServiceImpl - Patient with national id 11453231 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:05:11.200 [main] PatientServiceImpl - Dentist with license number 44213 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:05:11.200 [main] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Pablo Perez (44213)
+Patient: Pablo Guevara (11453231)
+Date: 2022-12-15
+Time: 12:05:11.163108. Method saveAppointment.
+[INFO ] 2022-12-08 12:05:11.202 [main] PatientServiceImpl - Patient with national id 5432123 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:05:11.202 [main] PatientServiceImpl - Dentist with license number 11231 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:05:11.202 [main] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Marcos Acuña (11231)
+Patient: Marcos Mitre (5432123)
+Date: 2022-12-15
+Time: 12:05:11.163108. Method saveAppointment.
+[ERROR] 2022-12-08 12:05:11.208 [main] PatientServiceImpl - Appointment with id 4 doesn't exists. Method searchAppointmentById.
+[INFO ] 2022-12-08 12:05:21.846 [main] AppointmentServiceImplTest - Starting AppointmentServiceImplTest using Java 19 on MacBook-Pro-de-Fernando.local with PID 40896 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 12:05:21.847 [main] AppointmentServiceImplTest - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 12:05:21.848 [main] AppointmentServiceImplTest - No active profile set, falling back to default profiles: default
+[INFO ] 2022-12-08 12:05:24.024 [main] AppointmentServiceImplTest - Started AppointmentServiceImplTest in 2.293 seconds (JVM running for 3.124)
+[INFO ] 2022-12-08 12:05:24.265 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Andres
+Lastname = Poblete
+License number = 14123. Method saveDentist.
+[INFO ] 2022-12-08 12:05:24.268 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Pablo
+Lastname = Perez
+License number = 44213. Method saveDentist.
+[INFO ] 2022-12-08 12:05:24.270 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Marcos
+Lastname = Acuña
+License number = 11231. Method saveDentist.
+[INFO ] 2022-12-08 12:05:24.276 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Andres
+Last name: Poblete
+National id: 38416140
+Registration date: 2022-12-08
+Address: Mendoza. Method savePatient.
+[INFO ] 2022-12-08 12:05:24.281 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Pablo
+Last name: Guevara
+National id: 11453231
+Registration date: 2022-12-08
+Address: San Juan. Method savePatient.
+[INFO ] 2022-12-08 12:05:24.282 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Marcos
+Last name: Mitre
+National id: 5432123
+Registration date: 2022-12-08
+Address: Entre Rios. Method savePatient.
+[INFO ] 2022-12-08 12:05:24.286 [main] PatientServiceImpl - Dentist with license number 14123 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:05:24.310 [main] PatientServiceImpl - Dentist with license number 44213 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:05:24.310 [main] PatientServiceImpl - Dentist with license number 11231 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:05:24.311 [main] PatientServiceImpl - Patient with national id 38416140 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:05:24.314 [main] PatientServiceImpl - Patient with national id 11453231 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:05:24.314 [main] PatientServiceImpl - Patient with national id 5432123 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:05:24.315 [main] PatientServiceImpl - Patient with national id 38416140 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:05:24.317 [main] PatientServiceImpl - Dentist with license number 14123 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:05:24.318 [main] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Andres Poblete (14123)
+Patient: Andres Poblete (38416140)
+Date: 2022-12-15
+Time: 12:05:24.283382. Method saveAppointment.
+[INFO ] 2022-12-08 12:05:24.322 [main] PatientServiceImpl - Patient with national id 11453231 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:05:24.323 [main] PatientServiceImpl - Dentist with license number 44213 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:05:24.323 [main] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Pablo Perez (44213)
+Patient: Pablo Guevara (11453231)
+Date: 2022-12-15
+Time: 12:05:24.283382. Method saveAppointment.
+[INFO ] 2022-12-08 12:05:24.324 [main] PatientServiceImpl - Patient with national id 5432123 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:05:24.325 [main] PatientServiceImpl - Dentist with license number 11231 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:05:24.325 [main] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Marcos Acuña (11231)
+Patient: Marcos Mitre (5432123)
+Date: 2022-12-15
+Time: 12:05:24.283382. Method saveAppointment.
+[ERROR] 2022-12-08 12:05:24.331 [main] PatientServiceImpl - Appointment with id 4 doesn't exists. Method searchAppointmentById.
+[ERROR] 2022-12-08 12:05:24.375 [main] PatientServiceImpl - Appointment with id 7 doesn't exists. Method searchAppointmentById.
+[INFO ] 2022-12-08 12:05:24.386 [main] PatientServiceImpl - Appointments found successfully. Method searchAppointmentsByDentistLicense.
+[INFO ] 2022-12-08 12:05:24.397 [main] PatientServiceImpl - Appointments found successfully. Method searchAppointmentsByPatientNationalId.
+[ERROR] 2022-12-08 12:05:24.406 [main] PatientServiceImpl - Appointment with id 7 doesn't exists. Method searchAppointmentDTOCompleteById.
+[ERROR] 2022-12-08 12:05:24.415 [main] PatientServiceImpl - Appointment with id 7 doesn't exists. Method deleteAppointment
+[INFO ] 2022-12-08 12:05:33.960 [main] AppointmentServiceImplTest - Starting AppointmentServiceImplTest using Java 19 on MacBook-Pro-de-Fernando.local with PID 40901 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 12:05:33.961 [main] AppointmentServiceImplTest - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 12:05:33.962 [main] AppointmentServiceImplTest - No active profile set, falling back to default profiles: default
+[INFO ] 2022-12-08 12:05:36.001 [main] AppointmentServiceImplTest - Started AppointmentServiceImplTest in 2.139 seconds (JVM running for 2.872)
+[INFO ] 2022-12-08 12:05:36.210 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Andres
+Lastname = Poblete
+License number = 14123. Method saveDentist.
+[INFO ] 2022-12-08 12:05:36.213 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Pablo
+Lastname = Perez
+License number = 44213. Method saveDentist.
+[INFO ] 2022-12-08 12:05:36.214 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Marcos
+Lastname = Acuña
+License number = 11231. Method saveDentist.
+[INFO ] 2022-12-08 12:05:36.219 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Andres
+Last name: Poblete
+National id: 38416140
+Registration date: 2022-12-08
+Address: Mendoza. Method savePatient.
+[INFO ] 2022-12-08 12:05:36.223 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Pablo
+Last name: Guevara
+National id: 11453231
+Registration date: 2022-12-08
+Address: San Juan. Method savePatient.
+[INFO ] 2022-12-08 12:05:36.225 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Marcos
+Last name: Mitre
+National id: 5432123
+Registration date: 2022-12-08
+Address: Entre Rios. Method savePatient.
+[INFO ] 2022-12-08 12:05:36.229 [main] PatientServiceImpl - Dentist with license number 14123 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:05:36.250 [main] PatientServiceImpl - Dentist with license number 44213 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:05:36.250 [main] PatientServiceImpl - Dentist with license number 11231 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:05:36.251 [main] PatientServiceImpl - Patient with national id 38416140 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:05:36.254 [main] PatientServiceImpl - Patient with national id 11453231 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:05:36.256 [main] PatientServiceImpl - Patient with national id 5432123 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:05:36.256 [main] PatientServiceImpl - Patient with national id 38416140 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:05:36.258 [main] PatientServiceImpl - Dentist with license number 14123 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:05:36.260 [main] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Andres Poblete (14123)
+Patient: Andres Poblete (38416140)
+Date: 2022-12-15
+Time: 12:05:36.226093. Method saveAppointment.
+[INFO ] 2022-12-08 12:05:36.263 [main] PatientServiceImpl - Patient with national id 11453231 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:05:36.264 [main] PatientServiceImpl - Dentist with license number 44213 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:05:36.264 [main] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Pablo Perez (44213)
+Patient: Pablo Guevara (11453231)
+Date: 2022-12-15
+Time: 12:05:36.226093. Method saveAppointment.
+[INFO ] 2022-12-08 12:05:36.266 [main] PatientServiceImpl - Patient with national id 5432123 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:05:36.267 [main] PatientServiceImpl - Dentist with license number 11231 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:05:36.267 [main] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Marcos Acuña (11231)
+Patient: Marcos Mitre (5432123)
+Date: 2022-12-15
+Time: 12:05:36.226093. Method saveAppointment.
+[INFO ] 2022-12-08 12:05:36.274 [main] PatientServiceImpl - Appointment with id 1 found succesfully. Method searchAppointmentById.
+[INFO ] 2022-12-08 12:06:08.436 [main] AppointmentServiceImplTest - Starting AppointmentServiceImplTest using Java 19 on MacBook-Pro-de-Fernando.local with PID 40915 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 12:06:08.438 [main] AppointmentServiceImplTest - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 12:06:08.439 [main] AppointmentServiceImplTest - No active profile set, falling back to default profiles: default
+[INFO ] 2022-12-08 12:06:10.473 [main] AppointmentServiceImplTest - Started AppointmentServiceImplTest in 2.134 seconds (JVM running for 2.921)
+[INFO ] 2022-12-08 12:06:10.726 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Andres
+Lastname = Poblete
+License number = 14123. Method saveDentist.
+[INFO ] 2022-12-08 12:06:10.728 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Pablo
+Lastname = Perez
+License number = 44213. Method saveDentist.
+[INFO ] 2022-12-08 12:06:10.729 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Marcos
+Lastname = Acuña
+License number = 11231. Method saveDentist.
+[INFO ] 2022-12-08 12:06:10.733 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Andres
+Last name: Poblete
+National id: 38416140
+Registration date: 2022-12-08
+Address: Mendoza. Method savePatient.
+[INFO ] 2022-12-08 12:06:10.737 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Pablo
+Last name: Guevara
+National id: 11453231
+Registration date: 2022-12-08
+Address: San Juan. Method savePatient.
+[INFO ] 2022-12-08 12:06:10.739 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Marcos
+Last name: Mitre
+National id: 5432123
+Registration date: 2022-12-08
+Address: Entre Rios. Method savePatient.
+[INFO ] 2022-12-08 12:06:10.743 [main] PatientServiceImpl - Dentist with license number 14123 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:06:10.765 [main] PatientServiceImpl - Dentist with license number 44213 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:06:10.766 [main] PatientServiceImpl - Dentist with license number 11231 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:06:10.767 [main] PatientServiceImpl - Patient with national id 38416140 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:06:10.770 [main] PatientServiceImpl - Patient with national id 11453231 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:06:10.770 [main] PatientServiceImpl - Patient with national id 5432123 found successfully. Method searchPatientCompleteByNationalId
+[INFO ] 2022-12-08 12:06:10.771 [main] PatientServiceImpl - Patient with national id 38416140 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:06:10.773 [main] PatientServiceImpl - Dentist with license number 14123 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:06:10.774 [main] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Andres Poblete (14123)
+Patient: Andres Poblete (38416140)
+Date: 2022-12-15
+Time: 12:06:10.740553. Method saveAppointment.
+[INFO ] 2022-12-08 12:06:10.777 [main] PatientServiceImpl - Patient with national id 11453231 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:06:10.778 [main] PatientServiceImpl - Dentist with license number 44213 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:06:10.778 [main] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Pablo Perez (44213)
+Patient: Pablo Guevara (11453231)
+Date: 2022-12-15
+Time: 12:06:10.740553. Method saveAppointment.
+[INFO ] 2022-12-08 12:06:10.779 [main] PatientServiceImpl - Patient with national id 5432123 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:06:10.779 [main] PatientServiceImpl - Dentist with license number 11231 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:06:10.780 [main] PatientServiceImpl - Appointment saved successfully. 
+Appointment:
+Dentist: Marcos Acuña (11231)
+Patient: Marcos Mitre (5432123)
+Date: 2022-12-15
+Time: 12:06:10.740553. Method saveAppointment.
+[INFO ] 2022-12-08 12:06:10.786 [main] PatientServiceImpl - Appointment with id 1 found succesfully. Method searchAppointmentById.
+[INFO ] 2022-12-08 12:06:10.819 [main] PatientServiceImpl - Appointment with id 1 found succesfully. Method searchAppointmentById.
+[INFO ] 2022-12-08 12:06:10.829 [main] PatientServiceImpl - Appointments found successfully. Method searchAppointmentsByDentistLicense.
+[INFO ] 2022-12-08 12:06:10.838 [main] PatientServiceImpl - Appointments found successfully. Method searchAppointmentsByPatientNationalId.
+[INFO ] 2022-12-08 12:06:10.848 [main] PatientServiceImpl - Appointment with id 1 found succesfully. Method searchAppointmentDTOCompleteById.
+[INFO ] 2022-12-08 12:06:10.851 [main] PatientServiceImpl - Dentist with license number 44213 found successfully. Method searchDentistDTOCompleteByLicenseNumber
+[INFO ] 2022-12-08 12:06:10.855 [main] PatientServiceImpl - Appointment with id 1 updated successfully.
+[INFO ] 2022-12-08 12:06:10.863 [main] PatientServiceImpl - Appointment with id 1 found succesfully. Method searchAppointmentById.
+[INFO ] 2022-12-08 12:06:10.876 [main] PatientServiceImpl - Appointment with id 1 deleted successfully. Method deleteAppointment
+[ERROR] 2022-12-08 12:06:10.877 [main] PatientServiceImpl - Appointment with id 1 doesn't exists. Method searchAppointmentById.
+[INFO ] 2022-12-08 12:06:20.163 [main] DentistServiceImplTest - Starting DentistServiceImplTest using Java 19 on MacBook-Pro-de-Fernando.local with PID 40925 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 12:06:20.164 [main] DentistServiceImplTest - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 12:06:20.165 [main] DentistServiceImplTest - No active profile set, falling back to default profiles: default
+[INFO ] 2022-12-08 12:06:22.165 [main] DentistServiceImplTest - Started DentistServiceImplTest in 2.099 seconds (JVM running for 2.844)
+[INFO ] 2022-12-08 12:06:22.384 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Andres
+Lastname = Poblete
+License number = 14123. Method saveDentist.
+[INFO ] 2022-12-08 12:06:22.386 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Pablo
+Lastname = Perez
+License number = 44213. Method saveDentist.
+[INFO ] 2022-12-08 12:06:22.387 [main] PatientServiceImpl - Dentist saved succesfully. 
+Name = Marcos
+Lastname = Acuña
+License number = 11231. Method saveDentist.
+[INFO ] 2022-12-08 12:06:22.391 [main] PatientServiceImpl - Dentist with license number 14123 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:06:22.426 [main] PatientServiceImpl - Dentist with id 1 found successfully. Method searchDentistById
+[INFO ] 2022-12-08 12:06:22.432 [main] PatientServiceImpl - Dentist with license number 14123 found successfully. Method searchDentistByLicenseNumber
+[INFO ] 2022-12-08 12:06:22.445 [main] PatientServiceImpl - Dentist with id 1 updated successfully.  Method updateDentist.
+[INFO ] 2022-12-08 12:06:22.452 [main] PatientServiceImpl - Dentist with id 1 found successfully. Method searchDentistById
+[INFO ] 2022-12-08 12:06:22.463 [main] PatientServiceImpl - Dentist with id 1 deleted successfully. Method deleteDentistById
+[ERROR] 2022-12-08 12:06:22.463 [main] PatientServiceImpl - Dentist with id 1 doesn't exists. Method searchDentistById
+[INFO ] 2022-12-08 12:06:27.823 [main] PatientServiceImplTest - Starting PatientServiceImplTest using Java 19 on MacBook-Pro-de-Fernando.local with PID 40930 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 12:06:27.825 [main] PatientServiceImplTest - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 12:06:27.826 [main] PatientServiceImplTest - No active profile set, falling back to default profiles: default
+[INFO ] 2022-12-08 12:06:29.776 [main] PatientServiceImplTest - Started PatientServiceImplTest in 2.045 seconds (JVM running for 2.753)
+[INFO ] 2022-12-08 12:06:30.000 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Andres
+Last name: Poblete
+National id: 38416140
+Registration date: 2022-12-08
+Address: Mendoza. Method savePatient.
+[INFO ] 2022-12-08 12:06:30.004 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Pablo
+Last name: Guevara
+National id: 11453231
+Registration date: 2022-12-08
+Address: San Juan. Method savePatient.
+[INFO ] 2022-12-08 12:06:30.007 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Marcos
+Last name: Mitre
+National id: 5432123
+Registration date: 2022-12-08
+Address: Entre Rios. Method savePatient.
+[INFO ] 2022-12-08 12:06:30.014 [main] PatientServiceImpl - Patient with id 1 found successfully. Method searchPatientById
+[INFO ] 2022-12-08 12:06:35.713 [main] PatientServiceImplTest - Starting PatientServiceImplTest using Java 19 on MacBook-Pro-de-Fernando.local with PID 40934 (started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[DEBUG] 2022-12-08 12:06:35.715 [main] PatientServiceImplTest - Running with Spring Boot v2.5.3, Spring v5.3.9
+[INFO ] 2022-12-08 12:06:35.717 [main] PatientServiceImplTest - No active profile set, falling back to default profiles: default
+[INFO ] 2022-12-08 12:06:38.563 [main] PatientServiceImplTest - Started PatientServiceImplTest in 2.986 seconds (JVM running for 4.069)
+[INFO ] 2022-12-08 12:06:38.797 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Andres
+Last name: Poblete
+National id: 38416140
+Registration date: 2022-12-08
+Address: Mendoza. Method savePatient.
+[INFO ] 2022-12-08 12:06:38.801 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Pablo
+Last name: Guevara
+National id: 11453231
+Registration date: 2022-12-08
+Address: San Juan. Method savePatient.
+[INFO ] 2022-12-08 12:06:38.803 [main] PatientServiceImpl - Patient saved succesfully. 
+Name: Marcos
+Last name: Mitre
+National id: 5432123
+Registration date: 2022-12-08
+Address: Entre Rios. Method savePatient.
+[INFO ] 2022-12-08 12:06:38.810 [main] PatientServiceImpl - Patient with id 1 found successfully. Method searchPatientById
+[INFO ] 2022-12-08 12:06:38.855 [main] PatientServiceImpl - Patient with national id 38416140 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:06:38.861 [main] PatientServiceImpl - Patient with national id 38416140 found successfully. Method searchPatientByNationalId
+[INFO ] 2022-12-08 12:06:38.866 [main] PatientServiceImpl - Patient with id 1 found successfully. Method searchPatientById
+[INFO ] 2022-12-08 12:06:38.882 [main] PatientServiceImpl - Patient with id 1 deleted succesfully. Method deletePatientById
+[ERROR] 2022-12-08 12:06:38.883 [main] PatientServiceImpl - Patient with id 1 doesn't exists. Method searchPatientById
+[INFO ] 2022-12-08 12:26:32.152 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 41508 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[INFO ] 2022-12-08 12:26:32.156 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-12-08 12:26:34.033 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.054 seconds (JVM running for 2.747)
+[INFO ] 2022-12-08 12:26:57.660 [http-nio-8080-exec-2] PatientServiceImpl - Patient saved succesfully. 
+Name: Ruben
+Last name: Nazario
+National id: 38416140
+Registration date: 2022-11-25
+Address: Avenida Siempre Viva . Method savePatient.
+[INFO ] 2022-12-08 12:37:54.655 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 41849 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[INFO ] 2022-12-08 12:37:54.660 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-12-08 12:37:56.999 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.53 seconds (JVM running for 3.342)
+[INFO ] 2022-12-08 13:49:29.472 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 43407 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[INFO ] 2022-12-08 13:49:29.475 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-12-08 13:49:31.654 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.336 seconds (JVM running for 3.259)
+[INFO ] 2022-12-08 13:53:13.168 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 43450 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[INFO ] 2022-12-08 13:53:13.172 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-12-08 13:53:16.715 [main] TrabajofinalApplication - Started TrabajofinalApplication in 3.696 seconds (JVM running for 4.507)
+[INFO ] 2022-12-08 13:54:44.502 [http-nio-8080-exec-5] PatientServiceImpl - Patient saved succesfully. 
+Name: Ruben
+Last name: Nazario
+National id: 38416140
+Registration date: 2022-11-25
+Address: Avenida Siempre Viva . Method savePatient.
+[INFO ] 2022-12-08 13:55:50.183 [http-nio-8080-exec-8] PatientServiceImpl - Patient with id 1 found successfully. Method searchPatientById

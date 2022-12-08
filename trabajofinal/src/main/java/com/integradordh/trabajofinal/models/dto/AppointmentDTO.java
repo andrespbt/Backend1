@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
 
 
@@ -13,27 +14,19 @@ import java.time.LocalTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AppointmentDTO {
-
-    private Long id;
     private DentistDTO dentist;
     private PatientDTO patient;
-    private String date;
+    private LocalDate date;
     private LocalTime time;
 
 
-    public AppointmentDTO(DentistDTO dentist, PatientDTO patient, String date, LocalTime time) {
-        this.dentist = dentist;
-        this.patient = patient;
-        this.date = date;
-        this.time = time;
-    }
-
     @Override
     public String toString() {
-        return "\nDentist: " + dentist.toString()+ "\n" +
-                "\nPatient: " + patient.toString()+ "\n" +
-                "\nDate = " + date +
-                "\nTime = " + time;
+        return "\nAppointment:" +
+                "\nDentist: " + this.dentist.getName() + " " + this.dentist.getLastName() + " ( " + this.dentist.getLicenseNumber() + " )" +
+                "\nPatient: " + this.patient.getName() + " " + this.patient.getLastName() + " (" + this.patient.getNationalId() + " )" +
+                "\nDate: " + this.date +
+                "\nTime: " + this.time;
     }
 
 

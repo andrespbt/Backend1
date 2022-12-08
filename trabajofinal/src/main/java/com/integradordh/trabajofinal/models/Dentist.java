@@ -1,12 +1,13 @@
 package com.integradordh.trabajofinal.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.*;
+import java.lang.reflect.Field;
 import java.util.Set;
 
 
@@ -15,25 +16,55 @@ import java.util.Set;
 @Getter
 @Setter
 @Entity
-@Table(name = "dentists_tb")
-public class Dentist extends User{
+@Table(name = "dentists")
+public class Dentist {
 
     @Id
+    @SequenceGenerator(name = "dentist_sequence", sequenceName = "dentist_sequence", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "dentist_sequence")
     private Long id;
-
+    private String name;
+    private String lastName;
     private String licenseNumber;
 
-    @OneToMany(mappedBy = "dentist")
-    @JsonIgnore
-    private Set<Appointment> appointmentSet;
 
-    public Dentist(Long id, String name, String lastName, String licenseNumber) {
-        super(id, name, lastName);
+    public Dentist(String name, String lastName, String licenseNumber) {
+        this.name = name;
+        this.lastName = lastName;
         this.licenseNumber = licenseNumber;
     }
 
-    public Dentist(String name, String lastName, String licenseNumber) {
-        super(name, lastName);
-        this.licenseNumber = licenseNumber;
+    @Override
+    public String toString() {
+        return "\nName = " + this.getName() +
+                "\nLastname = " + this.getLastName() +
+                "\nLicense number = " + this.licenseNumber;
+    }
+
+    // Method used to update
+    public void merge(Object newObject) {
+
+        assert this.getClass().getName().equals(newObject.getClass().getName());
+
+        for (Field field : this.getClass().getDeclaredFields()) {
+
+            for (Field newField : newObject.getClass().getDeclaredFields()) {
+
+                if (field.getName().equals(newField.getName())) {
+
+                    try {
+
+                        field.set(
+                                this,
+                                newField.get(newObject) == null
+                                        ? field.get(this)
+                                        : newField.get(newObject));
+
+                    } catch (IllegalAccessException ignore) {
+                        // Field update exception on final modifier and other cases.
+                    }
+                }
+            }
+        }
     }
 }

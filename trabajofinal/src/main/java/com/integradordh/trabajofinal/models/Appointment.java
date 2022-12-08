@@ -1,13 +1,13 @@
 package com.integradordh.trabajofinal.models;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.sql.Date;
-import java.text.SimpleDateFormat;
+import javax.persistence.*;
+import java.lang.reflect.Field;
+import java.time.LocalDate;
 import java.time.LocalTime;
 
 @NoArgsConstructor
@@ -15,7 +15,7 @@ import java.time.LocalTime;
 @Getter
 @Setter
 @Entity
-@Table(name = "appointments_tb")
+@Table(name = "appointments")
 public class Appointment {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -26,18 +26,10 @@ public class Appointment {
     @ManyToOne
     @JoinColumn(name = "patient_id", nullable = false)
     private Patient patient;
-    private String date;
+    private LocalDate date;
     private LocalTime time;
 
-    public Appointment(Dentist dentist, Patient patient, Date date, LocalTime time) {
-        this.dentist = dentist;
-        this.patient = patient;
-        SimpleDateFormat DateFor = new SimpleDateFormat("dd/MM/yyyy");
-        this.date = DateFor.format(date);
-        this.time = time;
-    }
-
-    public Appointment(Dentist dentist, Patient patient, String date, LocalTime time) {
+    public Appointment(Dentist dentist, Patient patient, LocalDate date, LocalTime time) {
         this.dentist = dentist;
         this.patient = patient;
         this.date = date;
@@ -60,5 +52,39 @@ public class Appointment {
         this.dentist = dentist;
     }
 
+    @Override
+    public String toString() {
+        return "\nAppointment:" +
+                "\nDentist: " + this.dentist.getName() + " " + this.dentist.getLastName() + " (" + this.dentist.getLicenseNumber() + ")" +
+                "\nPatient: " + this.patient.getName() + " " + this.patient.getLastName() + " (" + this.patient.getNationalId() + ")" +
+                "\nDate: " + this.date +
+                "\nTime: " + this.time;
+    }
 
+    // Method used to update
+    public void merge(Object newObject) {
+
+        assert this.getClass().getName().equals(newObject.getClass().getName());
+
+        for (Field field : this.getClass().getDeclaredFields()) {
+
+            for (Field newField : newObject.getClass().getDeclaredFields()) {
+
+                if (field.getName().equals(newField.getName())) {
+
+                    try {
+
+                        field.set(
+                                this,
+                                newField.get(newObject) == null
+                                        ? field.get(this)
+                                        : newField.get(newObject));
+
+                    } catch (IllegalAccessException ignore) {
+                        // Field update exception on final modifier and other cases.
+                    }
+                }
+            }
+        }
+    }
 }
