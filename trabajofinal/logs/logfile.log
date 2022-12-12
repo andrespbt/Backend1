@@ -671,3 +671,27 @@ National id: 38416140
 Registration date: 2022-11-25
 Address: Avenida Siempre Viva . Method savePatient.
 [INFO ] 2022-12-08 13:55:50.183 [http-nio-8080-exec-8] PatientServiceImpl - Patient with id 1 found successfully. Method searchPatientById
+[INFO ] 2022-12-10 00:48:58.630 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 49071 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[INFO ] 2022-12-10 00:48:58.634 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-12-10 00:49:00.691 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.248 seconds (JVM running for 3.06)
+[INFO ] 2022-12-10 13:21:40.402 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 54321 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[INFO ] 2022-12-10 13:21:40.406 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-12-10 13:21:42.836 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.749 seconds (JVM running for 3.909)
+[INFO ] 2022-12-10 13:22:04.113 [http-nio-8080-exec-4] PatientServiceImpl - Patient saved succesfully. 
+Name: Ruben
+Last name: Nazario
+National id: 38416140
+Registration date: 2022-11-25
+Address: Avenida Siempre Viva . Method savePatient.
+[INFO ] 2022-12-10 20:30:02.727 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 59066 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[INFO ] 2022-12-10 20:30:02.732 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-12-10 20:30:05.743 [main] TrabajofinalApplication - Started TrabajofinalApplication in 3.183 seconds (JVM running for 4.162)
+[INFO ] 2022-12-10 20:39:33.821 [http-nio-8080-exec-9] PatientServiceImpl - Patient saved succesfully. 
+Name: Ruben
+Last name: Nazario
+National id: 38416140
+Registration date: 2022-11-25
+Address: Avenida Siempre Viva . Method savePatient.
+[INFO ] 2022-12-10 20:41:01.462 [main] TrabajofinalApplication - Starting TrabajofinalApplication using Java 19 on MacBook-Pro-de-Fernando.local with PID 59509 (/Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal/target/classes started by Fernando_Andres_Poblete in /Users/Fernando_Andres_Poblete/Desktop/Programacion/Digital House/Backend1/Trabajos/trabajofinal)
+[INFO ] 2022-12-10 20:41:01.466 [main] TrabajofinalApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2022-12-10 20:41:03.387 [main] TrabajofinalApplication - Started TrabajofinalApplication in 2.156 seconds (JVM running for 2.793)

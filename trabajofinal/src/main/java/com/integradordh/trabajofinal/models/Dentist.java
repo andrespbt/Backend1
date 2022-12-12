@@ -1,6 +1,5 @@
 package com.integradordh.trabajofinal.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,7 +7,6 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.lang.reflect.Field;
-import java.util.Set;
 
 
 @AllArgsConstructor
